@@ -5,9 +5,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 CREATE SCHEMA IF NOT EXISTS `clinicdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_polish_ci ;
 USE `clinicdb` ;
 
--- -----------------------------------------------------
--- Table `simpledb`.`raty`
--- -----------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `id_user` INT NOT NULL AUTO_INCREMENT,
   `login` VARCHAR(16) NULL,
