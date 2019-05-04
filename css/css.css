@@ -1,14 +1,15 @@
 .test{
-  font-size: 35px;
+  font-size: 2em;
   color: #4cd5ff;
 }
 .backgroundcolor{
   background-color: #91a2c1;
-<<<<<<< Updated upstream
 }
 
 .navbarFontSize{
   font-size: 1.4em;
-=======
->>>>>>> Stashed changes
+}
+
+.paddingRight{
+  padding-right: 2em;
 }
