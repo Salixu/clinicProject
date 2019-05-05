@@ -9,3 +9,16 @@
 .navbarFontSize{
   font-size: 1.4em;
 }
+
+.paddingRight{
+  padding-right: 2em;
+}
+
+.jumbotron{
+  background: url("../img/bamboo.jpg");
+  background-size: cover;
+}
+
+.buttony{
+  color: #4cd5ff;
+}
