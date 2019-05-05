@@ -14,6 +14,7 @@
   padding-right: 2em;
 }
 
-.jumbotronBackgroundColor{
-  background-color: #5cb5d1;
+.jumbotron{
+  background: url("../img/bamboo.jpg");
+  background-size: cover;
 }
