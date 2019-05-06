@@ -1,6 +1,49 @@
-{extends file ="navbar.tpl"}
+<?php
+/* Smarty version 3.1.33, created on 2019-05-06 21:05:45
+  from 'D:\xamp\htdocs\clinicProject\app\views\mainpageview.tpl' */
 
-{block name=content}
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5cd0858966b692_40189993',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'e496eeebe58d7cfd1b40e0de9d30d9bd9a834bb5' => 
+    array (
+      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\mainpageview.tpl',
+      1 => 1557169542,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5cd0858966b692_40189993 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1309045205cd08589664ab2_45392796', 'content');
+?>
+
+<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
+}
+/* {block 'content'} */
+class Block_1309045205cd08589664ab2_45392796 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'content' => 
+  array (
+    0 => 'Block_1309045205cd08589664ab2_45392796',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
 
     <!-- jumbotron -->
     <div class="jumbotron">
@@ -29,7 +72,8 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
 
         <div class="row">
           <div class="col-lg-4">
-            <img  src="{$conf->app_url}/img/form.png" alt="Generic placeholder image" width="140" height="140">
+            <img  src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/img/form.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Zostań naszym pacjentem</h2>
             <p>Stwórz konto poprzez wypelnienie formularza rejestracji, magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-secondary buttony" href="#" role="button">Wypelnij formularz &raquo;</a></p>
@@ -37,7 +81,8 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
           <div class="col-lg-4">
           </div>
           <div class="col-lg-4">
-            <img src="{$conf->app_url}/img/certificate1.png" alt="Generic placeholder image" width="140" height="140">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/img/certificate1.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Certyfikaty</h2>
             <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary buttony" href="#" role="button">Sprawdź! &raquo;</a></p>
@@ -53,7 +98,8 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="{$conf->app_url}/img/dentist.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/img/dentist.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -66,7 +112,8 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
               Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="{$conf->app_url}/img/ortho.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/img/ortho.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -78,4 +125,8 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
 <footer class="container">
   <p class="float-right"><a href="#">Wróć na górę</a></p>
   <p>&copy; <b>2019 Bartosz Glanowski</b></p>
-{/block}
+<?php
+}
+}
+/* {/block 'content'} */
+}
