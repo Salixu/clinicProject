@@ -1,8 +1,7 @@
 {extends file ="navbar.tpl"}
-<<<<<<< HEAD
-=======
+
 {block name=content}
->>>>>>> registration
+
     <nav class="navbar navbar-expand-lg navbar-light  backgroundcolor">
       <img src="../../img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
       <a class="navbar-brand" href="mainpageview.tpl"><span class = "test">RemediumDente</span></a>
