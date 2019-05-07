@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd08ffe4550e3_55609002 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd15c1a62e592_58259678 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4108929955cd08ffe44f815_35225235', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18968750685cd15c1a6291f9_32540517', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_4108929955cd08ffe44f815_35225235 extends Smarty_Internal_Block
+class Block_18968750685cd15c1a6291f9_32540517 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_4108929955cd08ffe44f815_35225235',
+    0 => 'Block_18968750685cd15c1a6291f9_32540517',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -46,10 +46,10 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 
     <!-- jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron1">
       <div class="container">
         <h1 class="display-4"><span class ="test2"><b>Klinika RemediumDente</b></span></h1>
-<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 Fusce efficitur nunc lectus, sit amet fermentum enim efficitur a.
 Praesent eget tellus arcu. Sed ut nibh enim. Nam lobortis volutpat augue non pulvinar.
@@ -62,7 +62,7 @@ Nunc faucibus porttitor ipsum, quis dapibus augue molestie et.
 Quisque at tortor pellentesque, dapibus erat id, suscipit felis.
 Proin id porta mauris. Curabitur ac placerat lacus, non euismod tellus.
 In nec lorem ac arcu consequat malesuada eget sit amet augue. Praesent sed euismod nisl.
-Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus quam erat, id iaculis metus.</b>
+Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus quam erat, id iaculis metus.
         </div>
       </div>
 <!-- konta -->
