@@ -3,10 +3,10 @@
 {block name=content}
 
     <!-- jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron1">
       <div class="container">
         <h1 class="display-4"><span class ="test2"><b>Klinika RemediumDente</b></span></h1>
-<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 Fusce efficitur nunc lectus, sit amet fermentum enim efficitur a.
 Praesent eget tellus arcu. Sed ut nibh enim. Nam lobortis volutpat augue non pulvinar.
@@ -19,7 +19,7 @@ Nunc faucibus porttitor ipsum, quis dapibus augue molestie et.
 Quisque at tortor pellentesque, dapibus erat id, suscipit felis.
 Proin id porta mauris. Curabitur ac placerat lacus, non euismod tellus.
 In nec lorem ac arcu consequat malesuada eget sit amet augue. Praesent sed euismod nisl.
-Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus quam erat, id iaculis metus.</b>
+Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus quam erat, id iaculis metus.
         </div>
       </div>
 <!-- konta -->

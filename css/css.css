@@ -14,8 +14,8 @@
   padding-right: 2em;
 }
 
-.jumbotron{
-  background-image: url("{$conf->app_url/img/bamboo.jpg"});
+.jumbotron1{
+  background-image: url("../img/bamboo.jpg");
   background-size: cover;
 }
 
@@ -31,6 +31,6 @@
 }
 
 .test2{
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: #4cd5ff;
 }

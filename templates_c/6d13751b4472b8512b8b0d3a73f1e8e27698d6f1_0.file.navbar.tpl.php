@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-06 21:05:11
+/* Smarty version 3.1.33, created on 2019-05-06 21:50:22
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd085677a3849_17317092',
+  'unifunc' => 'content_5cd08ffe533355_48870826',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1557169509,
+      1 => 1557172220,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd085677a3849_17317092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd08ffe533355_48870826 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -72,7 +72,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7632015675cd085677a2ba3_83285582', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12664917745cd08ffe532bc2_03213045', 'content');
 ?>
 
     </div>
@@ -80,12 +80,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7632015675cd085677
 </html>
 <?php }
 /* {block 'content'} */
-class Block_7632015675cd085677a2ba3_83285582 extends Smarty_Internal_Block
+class Block_12664917745cd08ffe532bc2_03213045 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_7632015675cd085677a2ba3_83285582',
+    0 => 'Block_12664917745cd08ffe532bc2_03213045',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

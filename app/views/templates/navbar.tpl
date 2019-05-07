@@ -24,7 +24,7 @@
                 <a class="nav-link" href="#">Zaloguj się</a>
               </li>
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#">Zarejestruj się</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kontakt</a>
