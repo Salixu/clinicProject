@@ -12,7 +12,7 @@
     <title>{$page_title|default:"Tytuł domyślny"}</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light  backgroundcolor">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light  backgroundcolor">
           <img src="{$conf->app_url}/img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
           <a class="navbar-brand" href="mainpageview.tpl"><span class = "test">RemediumDente</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
                 <a class="nav-link" href="#">Zaloguj się</a>
               </li>
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="#">Zarejestruj się</a>
+                <a class="nav-link" href="{$conf->action_root}regestrationShow">Zarejestruj się</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kontakt</a>
@@ -35,5 +35,10 @@
     <div class = "container">
       {block name=content}Domyslna tresc zawartosci {/block}
     </div>
+    <script>
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+    </script>
   </body>
 </html>

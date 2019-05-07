@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-06 21:50:22
+/* Smarty version 3.1.33, created on 2019-05-07 12:36:08
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd08ffe533355_48870826',
+  'unifunc' => 'content_5cd15f987e6a60_31258770',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1557172220,
+      1 => 1557225261,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd08ffe533355_48870826 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd15f987e6a60_31258770 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -49,7 +49,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 </title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light  backgroundcolor">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light  backgroundcolor">
           <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
           <a class="navbar-brand" href="mainpageview.tpl"><span class = "test">RemediumDente</span></a>
@@ -62,7 +62,8 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 <a class="nav-link" href="#">Zaloguj się</a>
               </li>
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+regestrationShow">Zarejestruj się</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kontakt</a>
@@ -72,20 +73,27 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12664917745cd08ffe532bc2_03213045', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_201157465cd15f987e50a2_94338498', 'content');
 ?>
 
     </div>
+    <?php echo '<script'; ?>
+>
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+    <?php echo '</script'; ?>
+>
   </body>
 </html>
 <?php }
 /* {block 'content'} */
-class Block_12664917745cd08ffe532bc2_03213045 extends Smarty_Internal_Block
+class Block_201157465cd15f987e50a2_94338498 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_12664917745cd08ffe532bc2_03213045',
+    0 => 'Block_201157465cd15f987e50a2_94338498',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
