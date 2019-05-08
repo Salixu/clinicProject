@@ -23,8 +23,8 @@
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="#">Zaloguj się</a>
               </li>
-              <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}regestrationShow">Zarejestruj się</a>
+              <li class="nav-item paddingRight {if ($active =='register')}active{/if}">
+                <a class="nav-link" href="{$conf->action_root}registrationShow">Zarejestruj się</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kontakt</a>
