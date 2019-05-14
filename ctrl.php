@@ -4,7 +4,7 @@
   getRouter()->setDefaultRoute('mainPageShow');
   getRouter()->addRoute('registrationShow', 'registrationCtrl');
   getRouter()->addRoute('mainPageShow', 'mainPageCtrl');
-  getRouter()->addRoute('register', 'registrationCtrl');
+  getRouter()->addRoute('CreateAccount', 'registrationCtrl');
 
   getRouter()->go();
 

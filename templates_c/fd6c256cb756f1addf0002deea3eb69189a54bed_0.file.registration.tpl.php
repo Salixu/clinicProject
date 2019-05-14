@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-14 16:42:41
+/* Smarty version 3.1.33, created on 2019-05-14 19:36:29
   from 'D:\xamp\htdocs\clinicProject\app\views\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cdad3e1001361_03515359',
+  'unifunc' => 'content_5cdafc9da86709_91872989',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd6c256cb756f1addf0002deea3eb69189a54bed' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\registration.tpl',
-      1 => 1557844954,
+      1 => 1557855386,
       2 => 'file',
     ),
   ),
@@ -20,31 +20,32 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cdad3e1001361_03515359 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cdafc9da86709_91872989 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16584672175cdad3e0c39999_50534882', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12154684135cdafc9da759c3_92844790', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_16584672175cdad3e0c39999_50534882 extends Smarty_Internal_Block
+class Block_12154684135cdafc9da759c3_92844790 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_16584672175cdad3e0c39999_50534882',
+    0 => 'Block_12154684135cdafc9da759c3_92844790',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="container">
-    <form class="form-horizontal" role="form" method="POST" action="/register">
+    <form class="form-horizontal" role="form" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+CreateAccount">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -158,24 +159,22 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             </div>
         </div>
     </form>
-
     <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
-       <div class="row center">
-           <ul class="black-text">
-               <?php
+      <h5>Wystąpiły błędy: </h5>
+      <ol>
+      <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getErrors(), 'err');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
 ?>
-                   <li><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
+      <li><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
 </li>
-               <?php
+      <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-           </ul>
-       </div>
-   <?php }?>
+      </ol>
+    <?php }?>
 </div>
 <?php
 }

@@ -1,7 +1,7 @@
 {extends file ="navbar.tpl"}
 {block name=content}
 <div class="container">
-    <form class="form-horizontal" role="form" method="POST" action="/register">
+    <form class="form-horizontal" role="form" method="POST" action="{$conf->action_url}CreateAccount">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -115,15 +115,15 @@
             </div>
         </div>
     </form>
-
     {if $msgs->isError()}
-       <div class="row center">
-           <ul class="black-text">
-               {foreach $msgs->getErrors() as $err}
-                   <li>{$err}</li>
-               {/foreach}
-           </ul>
-       </div>
-   {/if}
+      <h5>Wystąpiły błędy: </h5>
+      <ol>
+      {foreach  $msgs->getErrors() as $err}
+      {strip}
+        <li>{$err}</li>
+      {/strip}
+      {/foreach}
+      </ol>
+    {/if}
 </div>
 {/block}

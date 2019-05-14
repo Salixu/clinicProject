@@ -19,24 +19,23 @@ use app\forms\RegisterForm;
      }
 
      public function validate(){
-       if (! (isset ( $this->form->name ) && isset ( $this->form->pass ))) {
-         // sytuacja wystąpi kiedy np. kontroler zostanie wywołany bezpośrednio - nie z formularza
-         return false;
-       }else if ($this->form->pass == $this->form->passConfirm){
-         return true;
-       }
-       else {
+      if($this->form->pass != $this->form->passConfirm){
          getMessages()->addError('Hasla się nie zgadzają');
-       return false;
-     }
+         return false;
+     }else{
+      return 1;
+    }
      }
 
-     public function action_register(){
+     public function action_CreateAccount(){
        $this->getParams();
 
        if ($this->validate()){
+         $this->generateViewTest();
+       }else {
          $this->generateView();
        }
+
      }
 
      public function action_registrationShow(){
@@ -45,7 +44,14 @@ use app\forms\RegisterForm;
      public function generateView(){
        getSmarty()->assign('page_title', 'Formularz rejestracji');
        getSmarty()->assign('page_description', 'Panel rejestracji');
+       getSmarty()->assign('form', $this->form);
        getSmarty()->display('registration.tpl');
+     }
+     public function generateViewTest(){
+       getSmarty()->assign('page_title', 'Formularz rejestracji');
+       getSmarty()->assign('page_description', 'Panel rejestracji');
+       getSmarty()->assign('form', $this->form);
+       getSmarty()->display('mainpageview.tpl');
      }
    }
 
