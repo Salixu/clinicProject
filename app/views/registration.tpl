@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                        <input type="text" name="naziwsko" class="form-control" id="surname"
+                        <input type="text" name="surname" class="form-control" id="surname"
                                placeholder="Naziwsko" required autofocus>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                        <input type="password" name="password" class="form-control" id="pass"
+                        <input type="password" name="pass" class="form-control" id="pass"
                                placeholder="Haslo" required>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                         <div class="input-group-addon" style="width: 2.6rem">
                             <i class="fa fa-repeat"></i>
                         </div>
-                        <input type="password" name="password-confirmation" class="form-control"
+                        <input type="password" name="passConfirm" class="form-control"
                                id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
@@ -114,16 +114,16 @@
                 <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Zarejestruj</button>
             </div>
         </div>
+        {if $msgs->isError()}
+          <h5>Wystąpiły błędy: </h5>
+          <ol>
+          {foreach  $msgs->getErrors() as $err}
+          {strip}
+            <li>{$err}</li>
+          {/strip}
+          {/foreach}
+          </ol>
+        {/if}
     </form>
-    {if $msgs->isError()}
-      <h5>Wystąpiły błędy: </h5>
-      <ol>
-      {foreach  $msgs->getErrors() as $err}
-      {strip}
-        <li>{$err}</li>
-      {/strip}
-      {/foreach}
-      </ol>
-    {/if}
 </div>
 {/block}

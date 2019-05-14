@@ -19,18 +19,20 @@ use app\forms\RegisterForm;
      }
 
      public function validate(){
-      if($this->form->pass != $this->form->passConfirm){
-         getMessages()->addError('Hasla się nie zgadzają');
+      if ($this->form->pass != $this->form->passConfirm){
+         getMessages()->addError('Hasla się różnią');
          return false;
-     }else{
-      return 1;
-    }
      }
+     else
+     {
+      return true;
+    }
+}
 
      public function action_CreateAccount(){
        $this->getParams();
 
-       if ($this->validate()){
+       if ($this->validate() == true){
          $this->generateViewTest();
        }else {
          $this->generateView();

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-14 19:36:29
+/* Smarty version 3.1.33, created on 2019-05-14 23:04:47
   from 'D:\xamp\htdocs\clinicProject\app\views\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cdafc9da86709_91872989',
+  'unifunc' => 'content_5cdb2d6f670d54_34142572',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd6c256cb756f1addf0002deea3eb69189a54bed' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\registration.tpl',
-      1 => 1557855386,
+      1 => 1557867883,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cdafc9da86709_91872989 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cdb2d6f670d54_34142572 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12154684135cdafc9da759c3_92844790', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17842870535cdb2d6f6565a3_60894863', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_12154684135cdafc9da759c3_92844790 extends Smarty_Internal_Block
+class Block_17842870535cdb2d6f6565a3_60894863 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_12154684135cdafc9da759c3_92844790',
+    0 => 'Block_17842870535cdb2d6f6565a3_60894863',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -81,7 +81,7 @@ CreateAccount">
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                        <input type="text" name="naziwsko" class="form-control" id="surname"
+                        <input type="text" name="surname" class="form-control" id="surname"
                                placeholder="Naziwsko" required autofocus>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ CreateAccount">
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                        <input type="password" name="password" class="form-control" id="pass"
+                        <input type="password" name="pass" class="form-control" id="pass"
                                placeholder="Haslo" required>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ CreateAccount">
                         <div class="input-group-addon" style="width: 2.6rem">
                             <i class="fa fa-repeat"></i>
                         </div>
-                        <input type="password" name="password-confirmation" class="form-control"
+                        <input type="password" name="passConfirm" class="form-control"
                                id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
@@ -158,23 +158,23 @@ CreateAccount">
                 <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Zarejestruj</button>
             </div>
         </div>
-    </form>
-    <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
-      <h5>Wystąpiły błędy: </h5>
-      <ol>
-      <?php
+        <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
+          <h5>Wystąpiły błędy: </h5>
+          <ol>
+          <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getErrors(), 'err');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
 ?>
-      <li><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
+          <li><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
 </li>
-      <?php
+          <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-      </ol>
-    <?php }?>
+          </ol>
+        <?php }?>
+    </form>
 </div>
 <?php
 }
