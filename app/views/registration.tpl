@@ -5,7 +5,6 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <h2>Zostań naszym pacjentem</h2>
                 <hr>
             </div>
         </div>
@@ -38,7 +37,7 @@
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                        <input type="text" name="naziwsko" class="form-control" id="naziwsko"
+                        <input type="text" name="naziwsko" class="form-control" id="surname"
                                placeholder="Naziwsko" required autofocus>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                        <input type="password" name="password" class="form-control" id="password"
+                        <input type="password" name="password" class="form-control" id="pass"
                                placeholder="Haslo" required>
                     </div>
                 </div>
@@ -104,7 +103,7 @@
                             <i class="fa fa-repeat"></i>
                         </div>
                         <input type="password" name="password-confirmation" class="form-control"
-                               id="password-confirm" placeholder="Haslo" required>
+                               id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
             </div>
@@ -116,5 +115,15 @@
             </div>
         </div>
     </form>
+
+    {if $msgs->isError()}
+       <div class="row center">
+           <ul class="black-text">
+               {foreach $msgs->getErrors() as $err}
+                   <li>{$err}</li>
+               {/foreach}
+           </ul>
+       </div>
+   {/if}
 </div>
 {/block}
