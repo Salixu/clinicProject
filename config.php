@@ -8,7 +8,7 @@ $conf->action_root = $conf->app_root.'/ctrl.php?action=';
 
 $conf->db_type    = 'mysql';
 $conf->db_server  = 'localhost';
-$conf->db_name    = 'kubeu';
+$conf->db_name    = 'clinicdb';
 $conf->db_user    = 'root';
 $conf->db_pass    = '';
 $conf->db_charset = 'utf8';
