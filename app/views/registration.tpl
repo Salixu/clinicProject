@@ -63,13 +63,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put e-mail validation error messages here -->
-                        </span>
-                </div>
-            </div>
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
@@ -79,7 +72,7 @@
                 <div class="form-group has-danger">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                        <input type="password" name="pass" class="form-control" id="pass"
+                        <input type="password" name="pass" minlength ="8"class="form-control" id="pass"
                                placeholder="Haslo" required>
                     </div>
                 </div>

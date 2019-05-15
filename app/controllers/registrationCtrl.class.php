@@ -20,7 +20,7 @@ use app\forms\RegisterForm;
 
      public function validate(){
       $emails = getDB()->select("users",["email"],[
-        "email" => "bartoszglanowski@gmail.com"
+        "email" => $this->form->email
       ]);
       if ($this->form->pass != $this->form->passConfirm){
          getMessages()->addError('Hasla się różnią');
