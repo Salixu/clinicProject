@@ -6,7 +6,7 @@ class mainPageCtrl{
   }
 
   public function generateView(){
-    getSmarty()->assign('page_title', 'Formularz rejestracji');
+    getSmarty()->assign('page_title', 'Strona glowna');
     getSmarty()->assign('page_description', 'Panel rejestracji');
     getSmarty()->display('mainpageview.tpl');
 }

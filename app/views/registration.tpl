@@ -106,6 +106,15 @@
                                id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
+                {if $msgs->isError()}
+                  <ul>
+                  {foreach  $msgs->getErrors() as $err}
+                  {strip}
+                    <li><span>{$err}</span></li>
+                  {/strip}
+                  {/foreach}
+                </ul>
+                {/if}
             </div>
         </div>
         <div class="row">
@@ -114,16 +123,6 @@
                 <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Zarejestruj</button>
             </div>
         </div>
-        {if $msgs->isError()}
-          <h5>Wystąpiły błędy: </h5>
-          <ol>
-          {foreach  $msgs->getErrors() as $err}
-          {strip}
-            <li>{$err}</li>
-          {/strip}
-          {/foreach}
-          </ol>
-        {/if}
     </form>
 </div>
 {/block}

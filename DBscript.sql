@@ -8,7 +8,8 @@ USE `clinicdb` ;
 
 CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `id_user` INT NOT NULL AUTO_INCREMENT,
-  `login` VARCHAR(16) NULL,
+  `name` VARCHAR(16) NULL,
+  `surname` VARCHAR(16) NULL,
   `salt` VARCHAR(45) NULL,
   `hash(password)` VARCHAR(256) NULL,
   `email` VARCHAR(45) NULL,
