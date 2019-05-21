@@ -5,6 +5,8 @@ use app\forms\LoginForm;
 
 class loginCtrl{
   private $form;
+  private $emails;
+  private $hash;
 
   public function __construct(){
     $this->form = new LoginForm();
@@ -19,16 +21,26 @@ class loginCtrl{
     $this->generateView();
   }
 
-  public function validate(){
-    if (! (isset ($this->form->email) && isset ($this->form->pass))){
-    return false;
+  public function action_logged(){
+    if ($this->validate()){
+      $this->generateView2();
+    }else {
+      $this->generateView();
     }
-    $emails = getDB()->select("user",["email"],[
-      $this->form->email
+  }
+
+  public function validate(){
+    $emails = getDB()->get("users", "email",[
+      "email" => $this->form->email
     ]);
-    //$hash = getDB()->select("user", [])
-    if ($emails != $this->form->email){
-      getMessages()->addError('Email lub haslo są nieprawidlowe');
+    $hash = getDB()->get("users", "hash",[
+      "email" => $this->form->email
+    ]);
+     if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
+       return true;
+     }else{
+       getMessages()->addError("Login lub haslo nieprawidlowe");
+      return false;
     }
   }
 
@@ -39,6 +51,12 @@ class loginCtrl{
     getSmarty()->assign('page_description', 'Panel logowania');
     getSmarty()->assign('form', $this->form);
     getSmarty()->display('loginview.tpl');
+  }
+  public function generateView2(){
+    getSmarty()->assign('page_title', 'Panel logowania');
+    getSmarty()->assign('page_description', 'Panel logowania');
+    getSmarty()->assign('form', $this->form);
+    getSmarty()->display('mainpageview.tpl');
   }
 }
  ?>

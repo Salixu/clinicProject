@@ -39,7 +39,7 @@ use app\forms\RegisterForm;
      public function action_CreateAccount(){
        $this->getParams();
        $this->form->name = $this->form->name." ".$this->form->surname;
-       if ($this->validate() == true){
+       if ($this->validate()){
          $this->form->pass = password_hash($this->form->pass, PASSWORD_DEFAULT);
          getDB()->insert('users',[
            "name"     => $this->form->name,

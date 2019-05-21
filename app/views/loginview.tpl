@@ -1,7 +1,7 @@
 {extends file ="navbar.tpl"}
 {block name=content}
 <div class="container">
-    <form class="form-horizontal" role="form" method="POST" action="{$conf->action_url}loginShow">
+    <form class="form-horizontal" role="form" method="POST" action="{$conf->action_url}logged">
       <div class="row">
           <div class="col-md-3"></div>
           <div class="col-md-6">
@@ -33,6 +33,15 @@
                         <input type="password" name="pass" minlength ="8"class="form-control" id="pass"
                                placeholder="Haslo" required autofocus>
                     </div>
+                    {if $msgs->isError()}
+                      <ul>
+                      {foreach  $msgs->getErrors() as $err}
+                      {strip}
+                        <li><span>{$err}</span></li>
+                      {/strip}
+                      {/foreach}
+                    </ul>
+                    {/if}
                 </div>
             </div>
             <div class="col-md-3">
@@ -43,15 +52,7 @@
                 </div>
             </div>
         </div>
-                {if $msgs->isError()}
-                  <ul>
-                  {foreach  $msgs->getErrors() as $err}
-                  {strip}
-                    <li><span>{$err}</span></li>
-                  {/strip}
-                  {/foreach}
-                </ul>
-                {/if}
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
