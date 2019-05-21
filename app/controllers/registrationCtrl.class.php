@@ -38,10 +38,12 @@ use app\forms\RegisterForm;
      public function action_CreateAccount(){
        $this->getParams();
        if ($this->validate() == true){
+         $this->form->pass = password_hash($this->form->pass, PASSWORD_DEFAULT);
          getDB()->insert('users',[
            "name"     => $this->form->name,
            "email"    => $this->form->email,
-           "hash(password)" => $this->form->pass
+           "hash" => $this->form->pass,
+           "role" => 0
          ]);
          $this->generateViewTest();
        }else {

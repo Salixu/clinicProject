@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="#">Zaloguj się</a>
+                <a class="nav-link" href="{$conf->action_root}loginShow">Zaloguj się</a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="{$conf->action_root}registrationShow">Zarejestruj się</a>
