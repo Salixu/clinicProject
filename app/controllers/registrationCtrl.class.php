@@ -13,6 +13,7 @@ use app\forms\RegisterForm;
 
      public function getParams(){
        $this->form->name = getFromRequest('name');
+       $this->form->surname = getFromRequest('surname');
        $this->form->email = getFromRequest('email');
        $this->form->pass  = getFromRequest('pass');
        $this->form->passConfirm = getFromRequest('passConfirm');
@@ -37,6 +38,7 @@ use app\forms\RegisterForm;
 
      public function action_CreateAccount(){
        $this->getParams();
+       $this->form->name = $this->form->name." ".$this->form->surname;
        if ($this->validate() == true){
          $this->form->pass = password_hash($this->form->pass, PASSWORD_DEFAULT);
          getDB()->insert('users',[

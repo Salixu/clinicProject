@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-15 22:59:09
+/* Smarty version 3.1.33, created on 2019-05-21 14:53:28
   from 'D:\xamp\htdocs\clinicProject\app\views\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cdc7d9dacd2c3_64380710',
+  'unifunc' => 'content_5ce3f4c8cdfe13_85380194',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd6c256cb756f1addf0002deea3eb69189a54bed' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\registration.tpl',
-      1 => 1557953946,
+      1 => 1558443205,
       2 => 'file',
     ),
   ),
@@ -20,31 +20,31 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cdc7d9dacd2c3_64380710 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce3f4c8cdfe13_85380194 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5158711835cdc7d9dac01c4_70238257', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11120495735ce3f4c8cd1793_98190856', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_5158711835cdc7d9dac01c4_70238257 extends Smarty_Internal_Block
+class Block_11120495735ce3f4c8cd1793_98190856 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_5158711835cdc7d9dac01c4_70238257',
+    0 => 'Block_11120495735ce3f4c8cd1793_98190856',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="container">
-    <form class="form-horizontal" role="form" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+    <form class="form-horizontal" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
 CreateAccount">
         <div class="row">
             <div class="col-md-3"></div>
@@ -75,7 +75,7 @@ CreateAccount">
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
-                <label for="naziwsko">Nazwisko</label>
+                <label for="surname">Nazwisko</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
@@ -110,7 +110,7 @@ CreateAccount">
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
-                <label for="password">Haslo</label>
+                <label for="pass">Haslo</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group has-danger">
