@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 21:10:45
+/* Smarty version 3.1.33, created on 2019-05-23 21:14:15
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce6f035b7dcf9_99724549',
+  'unifunc' => 'content_5ce6f107098f69_38037857',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1558638641,
+      1 => 1558638852,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce6f035b7dcf9_99724549 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce6f107098f69_38037857 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -61,21 +61,21 @@ mainPageshow"><span class = "test">RemediumDente</span></a>
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-loginShow">Zaloguj się</a>
+loginShow"><b>Zaloguj się</b></a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-registrationShow">Zarejestruj się</a>
+registrationShow"><b>Zarejestruj się</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#"><b>Kontakt</b></a>
               </li>
             </ul>
           </div>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19363324765ce6f035b7cf35_98392949', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9109718845ce6f107098230_16886555', 'content');
 ?>
 
     </div>
@@ -90,12 +90,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19363324765ce6f035
 </html>
 <?php }
 /* {block 'content'} */
-class Block_19363324765ce6f035b7cf35_98392949 extends Smarty_Internal_Block
+class Block_9109718845ce6f107098230_16886555 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_19363324765ce6f035b7cf35_98392949',
+    0 => 'Block_9109718845ce6f107098230_16886555',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

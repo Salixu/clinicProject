@@ -21,13 +21,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}loginShow">Zaloguj się</a>
+                <a class="nav-link" href="{$conf->action_root}loginShow"><b>Zaloguj się</b></a>
               </li>
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}registrationShow">Zarejestruj się</a>
+                <a class="nav-link" href="{$conf->action_root}registrationShow"><b>Zarejestruj się</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#"><b>Kontakt</b></a>
               </li>
             </ul>
           </div>
