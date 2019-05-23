@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-07 12:21:14
+/* Smarty version 3.1.33, created on 2019-05-21 19:16:37
   from 'D:\xamp\htdocs\clinicProject\app\views\mainpageview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd15c1a62e592_58259678',
+  'unifunc' => 'content_5ce432756dd6c0_89225582',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e496eeebe58d7cfd1b40e0de9d30d9bd9a834bb5' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\mainpageview.tpl',
-      1 => 1557224472,
+      1 => 1558458995,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd15c1a62e592_58259678 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce432756dd6c0_89225582 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18968750685cd15c1a6291f9_32540517', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20755397545ce432756d78c8_07094792', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_18968750685cd15c1a6291f9_32540517 extends Smarty_Internal_Block
+class Block_20755397545ce432756d78c8_07094792 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_18968750685cd15c1a6291f9_32540517',
+    0 => 'Block_20755397545ce432756d78c8_07094792',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -49,7 +49,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="jumbotron jumbotron1">
       <div class="container">
         <h1 class="display-4"><span class ="test2"><b>Klinika RemediumDente</b></span></h1>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 Fusce efficitur nunc lectus, sit amet fermentum enim efficitur a.
 Praesent eget tellus arcu. Sed ut nibh enim. Nam lobortis volutpat augue non pulvinar.
@@ -63,7 +63,7 @@ Quisque at tortor pellentesque, dapibus erat id, suscipit felis.
 Proin id porta mauris. Curabitur ac placerat lacus, non euismod tellus.
 In nec lorem ac arcu consequat malesuada eget sit amet augue. Praesent sed euismod nisl.
 Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus quam erat, id iaculis metus.
-        </div>
+</b></div>
       </div>
 <!-- konta -->
 <hr class="featurette-divider">
@@ -73,16 +73,17 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
         <div class="row">
           <div class="col-lg-4">
             <img  src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/img/form.png" alt="Generic placeholder image" width="140" height="140">
+/img/form.png" alt="Generic placeholder image" width="70" height="70">
             <h2>Zostań naszym pacjentem</h2>
             <p>Stwórz konto poprzez wypelnienie formularza rejestracji, magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary buttony" href="#" role="button">Wypelnij formularz &raquo;</a></p>
+            <p><a class="btn btn-secondary buttony" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+registrationShow" role="button">Wypelnij formularz &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
           </div>
           <div class="col-lg-4">
             <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/img/certificate1.png" alt="Generic placeholder image" width="140" height="140">
+/img/certificate1.png" alt="Generic placeholder image" width="70" height="70">
             <h2>Certyfikaty</h2>
             <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary buttony" href="#" role="button">Sprawdź! &raquo;</a></p>
