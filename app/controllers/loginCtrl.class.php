@@ -7,6 +7,7 @@ class loginCtrl{
   private $form;
   private $emails;
   private $hash;
+  public $verify;
 
   public function __construct(){
     $this->form = new LoginForm();
@@ -39,7 +40,7 @@ class loginCtrl{
      if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
        return true;
      }else{
-       getMessages()->addError("Login lub haslo nieprawidlowe");
+       getMessages()->addError("Niepoprawny login lub haslo");
       return false;
     }
   }
