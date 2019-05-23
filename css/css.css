@@ -1,6 +1,6 @@
 .test{
   font-size: 2em;
-  color: #4cd5ff;
+  color: #258d91;
 }
 .backgroundcolor{
   background-color: #91a2c1;
@@ -20,7 +20,7 @@
 }
 
 .buttony{
-  color: #4cd5ff;
+  color: white;
 }
 
 @media(min-width: 768px) {
@@ -32,7 +32,7 @@
 
 .test2{
   font-size: 0.9em;
-  color: #4cd5ff;
+  color: #258d91;
 }
 
 li span{
