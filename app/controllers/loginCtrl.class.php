@@ -23,6 +23,7 @@ class loginCtrl{
   }
 
   public function action_logged(){
+    $this->getParams();
     if ($this->validate()){
       $this->generateView2();
     }else {
