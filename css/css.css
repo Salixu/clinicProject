@@ -3,7 +3,7 @@
   color: #258d91;
 }
 .backgroundcolor{
-  background-color: #91a2c1;
+  background-color: #979899;
 }
 
 .navbarFontSize{
@@ -28,6 +28,10 @@
     padding-top: .5rem;
     text-align: right;
   }
+}
+
+.navbar-transparent{
+   background: rgba(0,0,0,0.4);
 }
 
 .test2{
