@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 20:37:25
+/* Smarty version 3.1.33, created on 2019-05-23 20:40:52
   from 'D:\xamp\htdocs\clinicProject\app\views\successReg.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce6e865d22279_68722134',
+  'unifunc' => 'content_5ce6e934156357_09094731',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '439ff0a105226df9fdaf0c2977c2b6e171f233c9' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\successReg.tpl',
-      1 => 1558636638,
+      1 => 1558636842,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce6e865d22279_68722134 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce6e934156357_09094731 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html >
 <head>
@@ -32,7 +32,7 @@ function content_5ce6e865d22279_68722134 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /assets/images/logo2.png" type="image/x-icon">
   <meta name="description" content="Web Site Builder Description">
-  <title>Page 1</title>
+  <title>Dziękujemy!</title>
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>

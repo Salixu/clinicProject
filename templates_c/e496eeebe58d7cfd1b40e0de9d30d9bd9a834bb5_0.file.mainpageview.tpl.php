@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-21 19:16:37
+/* Smarty version 3.1.33, created on 2019-05-23 20:53:57
   from 'D:\xamp\htdocs\clinicProject\app\views\mainpageview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce432756dd6c0_89225582',
+  'unifunc' => 'content_5ce6ec45b38d70_72175317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e496eeebe58d7cfd1b40e0de9d30d9bd9a834bb5' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\mainpageview.tpl',
-      1 => 1558458995,
+      1 => 1558637633,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce432756dd6c0_89225582 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce6ec45b38d70_72175317 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20755397545ce432756d78c8_07094792', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12084939065ce6ec45b32a17_85811992', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_20755397545ce432756d78c8_07094792 extends Smarty_Internal_Block
+class Block_12084939065ce6ec45b32a17_85811992 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_20755397545ce432756d78c8_07094792',
+    0 => 'Block_12084939065ce6ec45b32a17_85811992',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -86,7 +86,7 @@ registrationShow" role="button">Wypelnij formularz &raquo;</a></p>
 /img/certificate1.png" alt="Generic placeholder image" width="70" height="70">
             <h2>Certyfikaty</h2>
             <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary buttony" href="#" role="button">Sprawdź! &raquo;</a></p>
+            <p><a class="btn btn-secondary buttony" href="https://www.mynextmove.org/profile/ext/cert/29-1021.00" target="_blank" role="button">Sprawdź! &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
