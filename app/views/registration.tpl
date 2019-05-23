@@ -1,7 +1,7 @@
 {extends file ="navbar.tpl"}
 {block name=content}
 <div class="container">
-    <form class="form-horizontal" role="form" method="POST" action="{$conf->action_url}CreateAccount">
+    <form class="form-horizontal" method="POST" action="{$conf->action_url}CreateAccount">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -31,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
-                <label for="naziwsko">Nazwisko</label>
+                <label for="surname">Nazwisko</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
@@ -66,7 +66,7 @@
         </div>
         <div class="row">
             <div class="col-md-3 field-label-responsive">
-                <label for="password">Haslo</label>
+                <label for="pass">Haslo</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group has-danger">

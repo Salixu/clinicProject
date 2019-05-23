@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-21 13:54:49
+/* Smarty version 3.1.33, created on 2019-05-21 21:46:23
   from 'D:\xamp\htdocs\clinicProject\app\views\loginview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce3e7091d1e76_42017823',
+  'unifunc' => 'content_5ce4558f6186a3_32718009',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c739b8d65fb27a916df269bf743ddc18fa561f7' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\loginview.tpl',
-      1 => 1558439681,
+      1 => 1558467979,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce3e7091d1e76_42017823 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce4558f6186a3_32718009 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10869956795ce3e7091c5966_43548943', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17045447935ce4558f60bed8_09126578', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_10869956795ce3e7091c5966_43548943 extends Smarty_Internal_Block
+class Block_17045447935ce4558f60bed8_09126578 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_10869956795ce3e7091c5966_43548943',
+    0 => 'Block_17045447935ce4558f60bed8_09126578',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 <div class="container">
     <form class="form-horizontal" role="form" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-loginShow">
+logged">
       <div class="row">
           <div class="col-md-3"></div>
           <div class="col-md-6">
@@ -77,6 +77,21 @@ loginShow">
                         <input type="password" name="pass" minlength ="8"class="form-control" id="pass"
                                placeholder="Haslo" required autofocus>
                     </div>
+                    <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
+                      <ul>
+                      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getErrors(), 'err');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
+?>
+                      <li><span><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
+</span></li>
+                      <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                    </ul>
+                    <?php }?>
                 </div>
             </div>
             <div class="col-md-3">
@@ -87,21 +102,7 @@ loginShow">
                 </div>
             </div>
         </div>
-                <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
-                  <ul>
-                  <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getErrors(), 'err');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
-?>
-                  <li><span><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
-</span></li>
-                  <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                </ul>
-                <?php }?>
+
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
