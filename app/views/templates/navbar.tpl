@@ -27,7 +27,7 @@
                 <a class="nav-link" href="{$conf->action_root}registrationShow"><b>Zarejestruj się</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><b>Kontakt</b></a>
+                <a class="nav-link" href="{$conf->action_root}contactpageShow"><b>Kontakt</b></a>
               </li>
             </ul>
           </div>

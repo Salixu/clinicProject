@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 20:53:57
+/* Smarty version 3.1.33, created on 2019-05-24 11:12:49
   from 'D:\xamp\htdocs\clinicProject\app\views\mainpageview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce6ec45b38d70_72175317',
+  'unifunc' => 'content_5ce7b591562290_27407720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e496eeebe58d7cfd1b40e0de9d30d9bd9a834bb5' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\mainpageview.tpl',
-      1 => 1558637633,
+      1 => 1558689164,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce6ec45b38d70_72175317 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce7b591562290_27407720 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12084939065ce6ec45b32a17_85811992', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12051442035ce7b59155b913_79377730', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_12084939065ce6ec45b32a17_85811992 extends Smarty_Internal_Block
+class Block_12051442035ce7b59155b913_79377730 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_12084939065ce6ec45b32a17_85811992',
+    0 => 'Block_12051442035ce7b59155b913_79377730',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

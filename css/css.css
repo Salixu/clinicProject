@@ -39,6 +39,10 @@
   color: #258d91;
 }
 
+.jumbo-transparent{
+  background: rgba(0,0,0,0.4);
+}
+
 li span{
   color: #ef0e19;
 }

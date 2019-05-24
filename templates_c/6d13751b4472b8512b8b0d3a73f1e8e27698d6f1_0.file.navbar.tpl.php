@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-23 21:14:15
+/* Smarty version 3.1.33, created on 2019-05-24 11:23:06
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce6f107098f69_38037857',
+  'unifunc' => 'content_5ce7b7face4e68_32176114',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1558638852,
+      1 => 1558689783,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce6f107098f69_38037857 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ce7b7face4e68_32176114 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -68,14 +68,15 @@ loginShow"><b>Zaloguj się</b></a>
 registrationShow"><b>Zarejestruj się</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><b>Kontakt</b></a>
+                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+contactpageShow"><b>Kontakt</b></a>
               </li>
             </ul>
           </div>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9109718845ce6f107098230_16886555', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3258305065ce7b7face40d9_21746373', 'content');
 ?>
 
     </div>
@@ -90,12 +91,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9109718845ce6f1070
 </html>
 <?php }
 /* {block 'content'} */
-class Block_9109718845ce6f107098230_16886555 extends Smarty_Internal_Block
+class Block_3258305065ce7b7face40d9_21746373 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_9109718845ce6f107098230_16886555',
+    0 => 'Block_3258305065ce7b7face40d9_21746373',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
