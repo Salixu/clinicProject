@@ -18,7 +18,7 @@ public function action_contactpageShow(){
 public function generateViewContact(){
   getSmarty()->assign('page_title', 'Kontakt');
   getSmarty()->assign('page_description', 'Panel rejestracji');
-  getSmarty()->assign('contactView.tpl');
+  getSmarty()->display('contactView.tpl');
 }
 }
 ?>
