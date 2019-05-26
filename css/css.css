@@ -1,9 +1,9 @@
 .test{
   font-size: 2em;
-  color: #4cd5ff;
+  color: #258d91;
 }
 .backgroundcolor{
-  background-color: #91a2c1;
+  background-color: #979899;
 }
 
 .navbarFontSize{
@@ -20,7 +20,7 @@
 }
 
 .buttony{
-  color: #4cd5ff;
+  color: white;
 }
 
 @media(min-width: 768px) {
@@ -30,9 +30,17 @@
   }
 }
 
+.navbar-transparent{
+   background: rgba(0,0,0,0.4);
+}
+
 .test2{
   font-size: 0.9em;
-  color: #4cd5ff;
+  color: #258d91;
+}
+
+.jumbo-transparent{
+  background: rgba(0,0,0,0.4);
 }
 
 li span{
