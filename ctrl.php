@@ -7,7 +7,7 @@
   getRouter()->addRoute('CreateAccount', 'registrationCtrl');
   getRouter()->addRoute('loginShow', 'loginCtrl');
   getRouter()->addRoute('logged', 'loginCtrl');
-  getRouter()->addRoute('contactpageShow', 'mainPageCtrl');
+  getRouter()->addRoute('contactpageShow', 'contactCtrl');
 
   getRouter()->go();
 
