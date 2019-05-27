@@ -11,7 +11,7 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>{$page_title|default:"Tytuł domyślny"}</title>
   </head>
-  <body>
+  <body class = "backgroundImage">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-transparent backgroundcolor">
           <img src="{$conf->app_url}/img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
           <a class="navbar-brand" href="{$conf->action_root}mainPageshow"><span class = "test">RemediumDente</span></a>

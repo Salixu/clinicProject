@@ -46,3 +46,7 @@
 li span{
   color: #ef0e19;
 }
+
+.backgroundImage{
+  background-image: url("../../../img/pageBackground.jpg")
+}

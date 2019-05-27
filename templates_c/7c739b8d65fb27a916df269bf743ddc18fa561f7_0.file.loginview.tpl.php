@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-21 21:46:23
+/* Smarty version 3.1.33, created on 2019-05-27 10:23:51
   from 'D:\xamp\htdocs\clinicProject\app\views\loginview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce4558f6186a3_32718009',
+  'unifunc' => 'content_5ceb9e972155f9_94618746',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c739b8d65fb27a916df269bf743ddc18fa561f7' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\loginview.tpl',
-      1 => 1558467979,
+      1 => 1558944860,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce4558f6186a3_32718009 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ceb9e972155f9_94618746 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17045447935ce4558f60bed8_09126578', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15528829205ceb9e97208965_33971181', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_17045447935ce4558f60bed8_09126578 extends Smarty_Internal_Block
+class Block_15528829205ceb9e97208965_33971181 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_17045447935ce4558f60bed8_09126578',
+    0 => 'Block_15528829205ceb9e97208965_33971181',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -94,15 +94,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <?php }?>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!--<i class="fa fa-close"> </i>-->
-                        </span>
-                </div>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
