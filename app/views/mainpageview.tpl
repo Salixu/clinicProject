@@ -40,7 +40,7 @@ Aenean pharetra dapibus nibh. Duis sit amet consectetur lorem. Integer rhoncus q
             <img src="{$conf->app_url}/img/certificate1.png" alt="Generic placeholder image" width="70" height="70">
             <h2>Certyfikaty</h2>
             <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary buttony" href="#" role="button">Sprawdź! &raquo;</a></p>
+            <p><a class="btn btn-secondary buttony" href="https://www.mynextmove.org/profile/ext/cert/29-1021.00" target="_blank" role="button">Sprawdź! &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 

@@ -67,7 +67,7 @@ use app\forms\RegisterForm;
        getSmarty()->assign('page_title', 'Formularz rejestracji');
        getSmarty()->assign('page_description', 'Panel rejestracji');
        getSmarty()->assign('form', $this->form);
-       getSmarty()->display('mainpageview.tpl');
+       getSmarty()->display('successReg.tpl');
      }
    }
 

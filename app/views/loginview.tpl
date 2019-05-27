@@ -33,6 +33,7 @@
                         <input type="password" name="pass" minlength ="8"class="form-control" id="pass"
                                placeholder="Haslo" required autofocus>
                     </div>
+                  </div>
                     {if $msgs->isError()}
                       <ul>
                       {foreach  $msgs->getErrors() as $err}
@@ -42,17 +43,8 @@
                       {/foreach}
                     </ul>
                     {/if}
-                </div>
             </div>
-            <div class="col-md-3">
-                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!--<i class="fa fa-close"> </i>-->
-                        </span>
-                </div>
-            </div>
-        </div>
-
+          </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">

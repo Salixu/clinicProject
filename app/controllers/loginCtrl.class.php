@@ -7,7 +7,6 @@ class loginCtrl{
   private $form;
   private $emails;
   private $hash;
-  public $verify;
 
   public function __construct(){
     $this->form = new LoginForm();
