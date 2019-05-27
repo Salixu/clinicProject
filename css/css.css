@@ -48,5 +48,7 @@ li span{
 }
 
 .backgroundImage{
-  background-image: url("../../../img/pageBackground.jpg")
+  background-image: url("../img/pageBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
