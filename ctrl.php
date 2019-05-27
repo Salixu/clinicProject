@@ -2,7 +2,7 @@
   require_once 'init.php';
 
   getRouter()->setDefaultRoute('mainPageShow');
-  getRouter()->addRoute('registrationShow', 'registrationCtrl');
+  getRouter()->addRoute('registrationShow', 'registrationCtrl', ['1']);
   getRouter()->addRoute('mainPageShow', 'mainPageCtrl');
   getRouter()->addRoute('CreateAccount', 'registrationCtrl');
   getRouter()->addRoute('loginShow', 'loginCtrl');

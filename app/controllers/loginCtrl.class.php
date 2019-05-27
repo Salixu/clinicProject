@@ -2,11 +2,13 @@
 namespace app\controllers;
 
 use app\forms\LoginForm;
+use app\transfer\User;
 
 class loginCtrl{
   private $form;
   private $emails;
   private $hash;
+  private $role;
 
   public function __construct(){
     $this->form = new LoginForm();
@@ -37,7 +39,13 @@ class loginCtrl{
     $hash = getDB()->get("users", "hash",[
       "email" => $this->form->email
     ]);
+    $role = getDB()->get("users", "role",[
+      "email" => $this->form->email
+    ]);
      if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
+       $user = new User($this->form->email, $role);
+       $_SESSION[$role] = serialize($user);
+       addRole($user->role);
        return true;
      }else{
        getMessages()->addError("Niepoprawny login lub haslo");
