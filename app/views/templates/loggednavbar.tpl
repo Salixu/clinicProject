@@ -18,27 +18,43 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          {if $res->logged == user}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}loginShow"><b>Zaloguj się</b></a>
-              </li>
-              <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}registrationShow"><b>Zarejestruj się</b></a>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="{$conf->action_root}contactpageShow"><b>Kontakt</b></a>
+                <a class="nav-link" href="{$conf->action_root}logout"><b>user</b></a>
               </li>
             </ul>
           </div>
+
+          {else if $res->logged == recep}
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item">
+                <a class="nav-link" href="{$conf->action_root}logout"><b>recep</b></a>
+              </li>
+            </ul>
+          </div>
+          {else if $res->logged == doctor}
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item">
+                <a class="nav-link" href="{$conf->action_root}logout"><b>doc</b></a>
+              </li>
+            </ul>
+          </div>
+          {else if $res->logged == admin}
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item">
+                <a class="nav-link" href="{$conf->action_root}logout"><b>admin</b></a>
+              </li>
+            </ul>
+          </div>
+          {/if}
         </nav>
     <div class = "container">
       {block name=content}Domyslna tresc zawartosci {/block}
     </div>
-    <script>
-      $(document).ready(function(){
-        $('select').formSelect();
-      });
-    </script>
   </body>
 </html>

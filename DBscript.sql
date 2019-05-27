@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `hash` VARCHAR(256) NULL,
   `email` VARCHAR(45) NULL,
   `phone_number` VARCHAR(45) NULL,
-  `role` VARCHAR(1) NULL,
+  `role` VARCHAR(15) NULL,
   PRIMARY KEY (`id_user`));
 
   CREATE TABLE IF NOT EXISTS `clinicdb`.`contact` (
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
       `topic` VARCHAR(45) NULL,
       `email` VARCHAR(45) NULL,
       `message` VARCHAR(1024) NULL,
-      PRIMARY KEY (`id_user`));
+      PRIMARY KEY (`id_message`));
 
   CREATE TABLE IF NOT EXISTS `clinicdb`.`usersRoles` (
     `id_user_role` INT NOT NULL AUTO_INCREMENT,

@@ -2,6 +2,7 @@
 namespace app\controllers;
 
 use app\forms\LoginForm;
+use app\transfer\LoggedTransfer;
 use app\transfer\User;
 
 class loginCtrl{
@@ -12,6 +13,7 @@ class loginCtrl{
 
   public function __construct(){
     $this->form = new LoginForm();
+    $this->result = new LoggedTransfer();
   }
 
   public function getParams(){
@@ -26,7 +28,7 @@ class loginCtrl{
   public function action_logged(){
     $this->getParams();
     if ($this->validate()){
-      $this->generateView2();
+      $this->generateView3();
     }else {
       $this->generateView();
     }
@@ -43,6 +45,7 @@ class loginCtrl{
       "email" => $this->form->email
     ]);
      if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
+       $this->result->logged = $role;
        $user = new User($this->form->email, $role);
        $_SESSION[$role] = serialize($user);
        addRole($user->role);
@@ -53,6 +56,10 @@ class loginCtrl{
     }
   }
 
+  public function action_logout(){
+    session_destroy();
+    $this->generateView2();
+  }
 
 
   public function generateView(){
@@ -66,6 +73,13 @@ class loginCtrl{
     getSmarty()->assign('page_description', 'Panel logowania');
     getSmarty()->assign('form', $this->form);
     getSmarty()->display('mainpageview.tpl');
+  }
+  public function generateView3(){
+    getSmarty()->assign('page_title', 'Panel logowania');
+    getSmarty()->assign('page_description', 'Panel logowania');
+    getSmarty()->assign('form', $this->form);
+    getSmarty()->assign('res', $this->result);
+    getSmarty()->display('loggedview.tpl');
   }
 }
  ?>
