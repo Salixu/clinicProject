@@ -50,7 +50,7 @@
                 <a class="nav-link" href="{$conf->action_root}logout"><b>admin</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{$conf->action_root}contactpageShowAdmin"><b>kontakt</b></a>
+                <a class="nav-link" href="{$conf->action_root}editcontactpage"><b>kontakt</b></a>
               </li>
             </ul>
           </div>

@@ -16,10 +16,10 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   PRIMARY KEY (`id_user`));
 
   CREATE TABLE IF NOT EXISTS `clinicdb`.`contact` (
-    `id_contact` INT NOT NULL AUTO_INCREMENT,
+    `id_contact` INT NOT NULL,
     `email` VARCHAR(256) NULL,
     `adress` VARCHAR(256) NULL,
-    `phone_number` VARCHAR(45) NULL,
+    `phone_number` VARCHAR(256) NULL,
     PRIMARY KEY (`id_contact`));
 
     CREATE TABLE IF NOT EXISTS `clinicdb`.`messages` (
