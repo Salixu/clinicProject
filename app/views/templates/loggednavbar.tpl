@@ -18,7 +18,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          {if $res->logged == user}
+          {if $res == user}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item">
@@ -27,7 +27,7 @@
             </ul>
           </div>
 
-          {else if $res->logged == recep}
+          {else if $res == recep}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item">
@@ -35,7 +35,7 @@
               </li>
             </ul>
           </div>
-          {else if $res->logged == doctor}
+          {else if $res == doctor}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item">
@@ -43,11 +43,14 @@
               </li>
             </ul>
           </div>
-          {else if $res->logged == admin}
+          {else if $res == admin}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item">
                 <a class="nav-link" href="{$conf->action_root}logout"><b>admin</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{$conf->action_root}contactpageShowAdmin"><b>kontakt</b></a>
               </li>
             </ul>
           </div>

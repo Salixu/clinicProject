@@ -9,6 +9,7 @@
   getRouter()->addRoute('logged', 'loginCtrl');
   getRouter()->addRoute('contactpageShow', 'contactCtrl');
   getRouter()->addRoute('logout', 'loginCtrl', ['user','recep','doctor', 'admin']);
+  getRouter()->addRoute('contactpageShowAdmin', 'contactCtrl', ['admin']);
 
   getRouter()->go();
 
