@@ -4,7 +4,6 @@ namespace app\controllers;
 use app\forms\ContactForm;
 
 class contactCtrl{
-  public $dbcount;
   public function __construct(){
     $this->form = new ContactForm();
   }
@@ -16,6 +15,14 @@ class contactCtrl{
   }
 
   public function action_contactpageShow(){
+    $records = getDB()->select("contact", [
+      "email",
+      "adress",
+      "phone_number"
+    ],[
+      "id_contact" => '0'
+    ]);
+    getSmarty()->assign('records', $records);
     $this->generateViewContact();
   }
 
@@ -38,13 +45,13 @@ class contactCtrl{
     $this->form->email = $record['email'];
     $this->form->adress = $record['adress'];
     $this->form->phone_number = $record['phone_number'];
-
     $this->generateViewContactAdmin();
   }
 
   public function generateViewContact(){
     getSmarty()->assign('page_title', 'Kontakt');
     getSmarty()->assign('page_description', 'Panel rejestracji');
+    getSmarty()->assign('form', $this->form);
     getSmarty()->display('contactView.tpl');
   }
 
