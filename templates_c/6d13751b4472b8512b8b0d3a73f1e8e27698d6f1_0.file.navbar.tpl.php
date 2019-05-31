@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-27 21:07:41
+/* Smarty version 3.1.33, created on 2019-05-30 21:34:16
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cec357dd868b7_96115691',
+  'unifunc' => 'content_5cf03038f1f466_03423308',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1558984060,
+      1 => 1559244832,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cec357dd868b7_96115691 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf03038f1f466_03423308 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -76,7 +76,7 @@ contactpageShow"><b>Kontakt</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1884891635cec357dd85c20_10718104', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9952610905cf03038f1dfb5_07170722', 'content');
 ?>
 
     </div>
@@ -91,12 +91,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1884891635cec357dd
 </html>
 <?php }
 /* {block 'content'} */
-class Block_1884891635cec357dd85c20_10718104 extends Smarty_Internal_Block
+class Block_9952610905cf03038f1dfb5_07170722 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1884891635cec357dd85c20_10718104',
+    0 => 'Block_9952610905cf03038f1dfb5_07170722',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

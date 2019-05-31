@@ -41,13 +41,13 @@ class loginCtrl{
     $hash = getDB()->get("users", "hash",[
       "email" => $this->form->email
     ]);
-    $role = getDB()->get("users", "role",[
+    $this->role = getDB()->get("users", "role",[
       "email" => $this->form->email
     ]);
      if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
-       $this->result->logged = $role;
-       $user = new User($this->form->email, $role);
-       $_SESSION[$role] = serialize($user);
+       $_SESSION['role'] = $this->role;
+       $user = new User($this->form->email, $this->role);
+       $_SESSION[$this->role] = serialize($user);
        addRole($user->role);
        return true;
      }else{
@@ -78,7 +78,7 @@ class loginCtrl{
     getSmarty()->assign('page_title', 'Panel logowania');
     getSmarty()->assign('page_description', 'Panel logowania');
     getSmarty()->assign('form', $this->form);
-    getSmarty()->assign('res', $this->result);
+    getSmarty()->assign('res', $_SESSION['role']);
     getSmarty()->display('loggedview.tpl');
   }
 }
