@@ -36,9 +36,13 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
     `id_user` VARCHAR(45) NULL,
     PRIMARY KEY (`id_user_role`))
 
+
 ENGINE = InnoDB;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+INSERT INTO contact (email, adress, phone_number)
+VALUES ('email', 'adress', 'phone number'));

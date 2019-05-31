@@ -4,7 +4,7 @@ namespace app\controllers;
 use app\forms\ContactForm;
 
 class contactCtrl{
-
+  public $dbcount;
   public function __construct(){
     $this->form = new ContactForm();
   }
@@ -26,14 +26,14 @@ class contactCtrl{
       "adress" => $this->form->adress,
       "phone_number" => $this->form->phone_number
     ],[
-      "id_contact" => '1'
+      "id_contact" => '0'
     ]);
     $this->generateViewContactAdmin();
   }
 
   public function action_editcontactpage(){
     $record = getDB()->get("contact", "*",[
-      "id_contact" => '1'
+      "id_contact" => '0'
     ]);
     $this->form->email = $record['email'];
     $this->form->adress = $record['adress'];
