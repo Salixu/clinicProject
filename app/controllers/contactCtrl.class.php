@@ -2,10 +2,12 @@
 namespace app\controllers;
 
 use app\forms\ContactForm;
+use app\forms\messageForm;
 
 class contactCtrl{
   public function __construct(){
     $this->form = new ContactForm();
+    $this->message = new messageForm();
   }
 
   public function getParams(){
