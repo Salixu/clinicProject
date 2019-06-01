@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-01 21:31:07
+/* Smarty version 3.1.33, created on 2019-06-01 21:43:18
   from 'D:\xamp\htdocs\clinicProject\app\views\loggedview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf2d27bee46c8_67651796',
+  'unifunc' => 'content_5cf2d556345ab0_08960025',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '299116742fba1d247121d42dca66aace9c35a40f' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\loggedview.tpl',
-      1 => 1559417463,
+      1 => 1559418172,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf2d27bee46c8_67651796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf2d556345ab0_08960025 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11846139475cf2d27bed88f9_68757986', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10181547135cf2d556339e31_44052037', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_11846139475cf2d27bed88f9_68757986 extends Smarty_Internal_Block
+class Block_10181547135cf2d556339e31_44052037 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_11846139475cf2d27bed88f9_68757986',
+    0 => 'Block_10181547135cf2d556339e31_44052037',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -79,7 +79,7 @@ registrationShow" role="button">Wypelnij formularz &raquo;</a></p>
 /img/gear.svg" alt="Generic placeholder image" width="70" height="70">
             <h2>Edytuj profil</h2>
             <p><a class="btn btn-secondary buttony" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-registrationShow" role="button">Edytuj &raquo;</a></p>
+profileUpdate" role="button">Edytuj &raquo;</a></p>
           </div>
           <div class="col-lg-4">
           </div>

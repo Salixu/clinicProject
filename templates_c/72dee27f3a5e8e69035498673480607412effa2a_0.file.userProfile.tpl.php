@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-01 22:00:20
-  from 'D:\xamp\htdocs\clinicProject\app\views\userprofile.tpl' */
+/* Smarty version 3.1.33, created on 2019-06-01 22:11:41
+  from 'D:\xamp\htdocs\clinicProject\app\views\userProfile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf2d954ae9555_73409335',
+  'unifunc' => 'content_5cf2dbfda519c4_52505008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '4b12f373fc208ff6dcf50b433be793c65008e914' => 
+    '72dee27f3a5e8e69035498673480607412effa2a' => 
     array (
-      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\userprofile.tpl',
-      1 => 1559419199,
+      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\userProfile.tpl',
+      1 => 1559419896,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf2d954ae9555_73409335 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf2dbfda519c4_52505008 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9252289715cf2d954ad65c0_66898555', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14368753935cf2dbfda3eff8_99480677', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_9252289715cf2d954ad65c0_66898555 extends Smarty_Internal_Block
+class Block_14368753935cf2dbfda3eff8_99480677 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_9252289715cf2d954ad65c0_66898555',
+    0 => 'Block_14368753935cf2dbfda3eff8_99480677',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -70,7 +70,7 @@ userprofileUpdate" method="POST">
                 <label for="adress" class="col-2 col-form-label">Email</label>
                 <div class="col-10">
                   <input class="form-control" name="email" type="text" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->email;?>
-" id="email"></input>
+" id="email" readonly></input>
                 </div>
               </div>
               <div class="row">
@@ -80,7 +80,7 @@ userprofileUpdate" method="POST">
                   </div>
               </div>
               <div class="form-group row">
-                <label for="phone_number" class="col-2 col-form-label">Phone number</label>
+                <label for="asddsa" class="col-2 col-form-label">Numer telefonu</label>
                 <div class="col-10">
                   <input class="form-control" type="text" name="phone_number" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->phone_number;?>
 " id="phone_number"></input>
@@ -105,7 +105,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                   </ul>
                   <?php }?>
-                  <button type="submit" class="btn btn-success"> Save</button>
+                  <button type="submit" class="btn btn-success"> Zapisz</button>
                 </div>
               </div>
           </div>

@@ -13,7 +13,8 @@
   getRouter()->addRoute('editcontactpage', 'contactCtrl', ['admin']);
   getRouter()->addRoute('contactSave', 'contactCtrl', ['admin']);
   getRouter()->addRoute('sendMessage', 'contactCtrl');
-  getRouter()->addRoute('profileUpdate', 'userCtrl', ['user']);
+  getRouter()->addRoute('userprofileUpdate', 'userCtrl', ['user']);
+  getRouter()->addRoute('userprofileShow', 'userCtrl', ['user']);
 
   getRouter()->go();
 

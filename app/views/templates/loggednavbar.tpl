@@ -28,7 +28,7 @@
                 <a class="nav-link" href="{$conf->action_root}logout"><b>Wyświetl wizyty</b></a>
               </li>
               <li class="nav-item paddingRightLogout">
-                <a class="nav-link" href="{$conf->action_root}logout"><b>Edytuj profil</b></a>
+                <a class="nav-link" href="{$conf->action_root}userprofileShow"><b>Edytuj profil</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{$conf->action_root}logout"><b>Wyloguj</b></a>

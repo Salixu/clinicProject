@@ -31,7 +31,7 @@
           <div class="col-lg-4">
             <img  src="{$conf->app_url}/img/gear.svg" alt="Generic placeholder image" width="70" height="70">
             <h2>Edytuj profil</h2>
-            <p><a class="btn btn-secondary buttony" href="{$conf->action_root}registrationShow" role="button">Edytuj &raquo;</a></p>
+            <p><a class="btn btn-secondary buttony" href="{$conf->action_root}profileUpdate" role="button">Edytuj &raquo;</a></p>
           </div>
           <div class="col-lg-4">
           </div>
