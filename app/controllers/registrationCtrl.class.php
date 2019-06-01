@@ -45,7 +45,7 @@ use app\forms\RegisterForm;
            "name"     => $this->form->name,
            "email"    => $this->form->email,
            "hash" => $this->form->pass,
-           "role" => 0
+           "role" => 'user'
          ]);
          $this->generateViewTest();
        }else {
@@ -64,9 +64,8 @@ use app\forms\RegisterForm;
        getSmarty()->display('registration.tpl');
      }
      public function generateViewTest(){
-       getSmarty()->assign('page_title', 'Formularz rejestracji');
-       getSmarty()->assign('page_description', 'Panel rejestracji');
-       getSmarty()->assign('form', $this->form);
+       getSmarty()->assign('page_title', 'Sukces');
+       getSmarty()->assign('page_description', 'Sukces');
        getSmarty()->display('successReg.tpl');
      }
    }
