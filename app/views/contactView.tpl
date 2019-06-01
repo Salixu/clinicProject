@@ -1,7 +1,7 @@
 {extends file ="navbar.tpl"}
 {block name=content}
 <div class="container">
-    <form  method="POST" action="{$conf->action_url}CreateAccount">
+    <form  method="POST" action="{$conf->action_url}sendMessage">
       <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -142,6 +142,15 @@
               Napisz do nas!<div class="md-form">
                 <textarea id="form7" class="lg-textarea form-control" name="message" rows="2"></textarea>
               </div><br>
+              {if $msgs->isError()}
+                <ul>
+                {foreach  $msgs->getErrors() as $err}
+                {strip}
+                  <li><span>{$err}</span></li>
+                {/strip}
+                {/foreach}
+              </ul>
+              {/if}
                 <div class="row">
                     <div class="col-md-0"></div>
                     <div class="col-md-6">

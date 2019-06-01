@@ -14,6 +14,10 @@ class contactCtrl{
     $this->form->email = getFromRequest('email');
     $this->form->adress  = getFromRequest('adress');
     $this->form->phone_number  = getFromRequest('phone_number');
+    $this->message->name = getFromRequest('name');
+    $this->message->email = getFromRequest('email');
+    $this->message->topic = getFromRequest('topic');
+    $this->message->message = getFromRequest('message');
   }
 
   public function action_contactpageShow(){
@@ -26,6 +30,30 @@ class contactCtrl{
     ]);
     getSmarty()->assign('records', $records);
     $this->generateViewContact();
+  }
+
+  public function messageValidation(){
+    $this->getParams();
+    if (strlen($this->message->message) > 1024){
+      getMessages()->addError("Zbyt dluga wiadomosc.");
+      return false;
+    }
+    return true;
+  }
+
+  public function action_sendMessage(){
+    $this->getParams();
+    if ($this->messageValidation()){
+       getDB()->insert("messages",[
+         "name" => $this->message->name,
+         "email" => $this->message->email,
+         "topic" => $this->message->topic,
+         "message" => $this->message->message
+       ]);
+       $this->action_contactpageShow();
+    }else{
+      $this->action_contactpageShow();
+    }
   }
 
   public function action_contactSave(){

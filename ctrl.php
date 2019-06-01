@@ -12,6 +12,7 @@
   getRouter()->addRoute('contactpageShowAdmin', 'contactCtrl', ['admin']);
   getRouter()->addRoute('editcontactpage', 'contactCtrl', ['admin']);
   getRouter()->addRoute('contactSave', 'contactCtrl', ['admin']);
+  getRouter()->addRoute('sendMessage', 'contactCtrl');
 
   getRouter()->go();
 
