@@ -9,6 +9,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://kit.fontawesome.com/81b7fbfbf4.js"></script>
     <title>{$page_title|default:"Tytuł domyślny"}</title>
   </head>
   <body class = "backgroundImage">

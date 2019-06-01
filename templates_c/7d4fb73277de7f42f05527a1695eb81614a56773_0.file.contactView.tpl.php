@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-31 16:00:49
+/* Smarty version 3.1.33, created on 2019-05-31 16:24:18
   from 'D:\xamp\htdocs\clinicProject\app\views\contactView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf133916fe107_67315292',
+  'unifunc' => 'content_5cf139121198e8_81409172',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7d4fb73277de7f42f05527a1695eb81614a56773' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\contactView.tpl',
-      1 => 1559311247,
+      1 => 1559312655,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf133916fe107_67315292 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf139121198e8_81409172 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5957307325cf133916efff6_87713515', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17108103605cf1391210c9b1_12034361', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_5957307325cf133916efff6_87713515 extends Smarty_Internal_Block
+class Block_17108103605cf1391210c9b1_12034361 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_5957307325cf133916efff6_87713515',
+    0 => 'Block_17108103605cf1391210c9b1_12034361',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -54,11 +54,13 @@ CreateAccount">
                   </div>
                   <div class="col-md-12">
                       <hr>
+                      <b>Dane Kontakowe:</b>
+                      <hr>
                   </div>
               </div>
               <thead>
                 <tr>
-                  <th scope="col"><b>email: </b></th>
+                  <th scope="col"><b>Email: </b></th>
                 </tr>
               </thead>
               <tbody>
@@ -83,7 +85,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               </div>
               <thead>
                 <tr>
-                  <th scope="col"><b>adress: </b></th>
+                  <th scope="col"><b>Adress: </b></th>
                 </tr>
               </thead>
               <tbody>
@@ -129,12 +131,81 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
           <div class="col-sm">
             <div class="row">
-                <div class="col-md-1"></div>
+                <div class="col-md-0"></div>
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
-          One of three columns
+            <b>Formularz Kontaktowy: </b>
+            <div class="row">
+                <div class="col-md-0"></div>
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <form class="form-horizontal" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+CreateAccount">
+              <div class="row">
+                  <div class="col-sm">
+                      <label for="name">Imię: </label>
+                  </div>
+                      <div>
+                          <div>
+                              <input type="text" name="name" class="form-control" id="name"
+                                     placeholder="Imie" required autofocus>
+                          </div>
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-0"></div>
+                  <div class="col-md-12">
+                      <hr>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                      <label for="name">Adres email: </label>
+                  </div>
+                      <div>
+                          <div>
+                              <input type="text" name="name" class="form-control" id="name"
+                                     placeholder="adres email" required autofocus>
+                          </div>
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-0"></div>
+                  <div class="col-md-12">
+                      <hr>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                      <label for="name">Temat: </label>
+                  </div>
+                      <div>
+                          <div>
+                              <input type="text" name="name" class="form-control" id="name"
+                                     placeholder="Temat" required autofocus>
+                          </div>
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-0"></div>
+                  <div class="col-md-12">
+                      <hr>
+                  </div>
+              </div>
+              Napisz do nas!<div class="md-form">
+                <textarea id="form7" class="lg-textarea form-control" rows="2"></textarea>
+              </div><br>
+                <div class="row">
+                    <div class="col-md-0"></div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-success"><i class="fas fa-envelope"></i> Wyślij</button>
+                    </div>
+                </div>
+            </form>
           </div>
         </div>
       </div>

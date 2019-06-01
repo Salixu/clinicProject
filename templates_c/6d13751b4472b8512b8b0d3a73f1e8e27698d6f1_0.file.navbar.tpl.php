@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-30 21:34:16
+/* Smarty version 3.1.33, created on 2019-05-31 16:26:02
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf03038f1f466_03423308',
+  'unifunc' => 'content_5cf1397a081919_36474915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1559244832,
+      1 => 1559312756,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf03038f1f466_03423308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf1397a081919_36474915 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -44,6 +44,9 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 >
 <?php echo '<script'; ?>
  src="https://code.jquery.com/jquery-1.11.1.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="https://kit.fontawesome.com/81b7fbfbf4.js"><?php echo '</script'; ?>
 >
     <title><?php echo (($tmp = @$_smarty_tpl->tpl_vars['page_title']->value)===null||$tmp==='' ? "Tytuł domyślny" : $tmp);?>
 </title>
@@ -76,7 +79,7 @@ contactpageShow"><b>Kontakt</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9952610905cf03038f1dfb5_07170722', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20139386605cf1397a080da1_60145499', 'content');
 ?>
 
     </div>
@@ -91,12 +94,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9952610905cf03038f
 </html>
 <?php }
 /* {block 'content'} */
-class Block_9952610905cf03038f1dfb5_07170722 extends Smarty_Internal_Block
+class Block_20139386605cf1397a080da1_60145499 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_9952610905cf03038f1dfb5_07170722',
+    0 => 'Block_20139386605cf1397a080da1_60145499',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
