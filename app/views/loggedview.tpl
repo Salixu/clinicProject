@@ -14,7 +14,7 @@
         <div class="col-lg-4">
           <img  src="{$conf->app_url}/img/form.png" alt="Generic placeholder image" width="70" height="70">
           <h2>Ustal wizytę</h2>
-          <p><a class="btn btn-secondary buttony" href="{$conf->action_root}registrationShow" role="button">Wypelnij formularz &raquo;</a></p>
+          <p><a class="btn btn-secondary buttony" href="{$conf->action_root}showVisit" role="button">Wypelnij formularz &raquo;</a></p>
         </div>
         <div class="col-lg-4">
         </div>

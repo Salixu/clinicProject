@@ -15,6 +15,8 @@
   getRouter()->addRoute('sendMessage', 'contactCtrl');
   getRouter()->addRoute('userprofileUpdate', 'userCtrl', ['user']);
   getRouter()->addRoute('userprofileShow', 'userCtrl', ['user']);
+  getRouter()->addRoute('bookVisit', 'visitCtrl', ['user']);
+  getRouter()->addRoute('showVisit', 'visitCtrl', ['user']);
 
   getRouter()->go();
 

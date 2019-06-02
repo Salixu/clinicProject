@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-01 21:50:51
+/* Smarty version 3.1.33, created on 2019-06-02 15:59:17
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\loggednavbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf2d71b886421_54524825',
+  'unifunc' => 'content_5cf3d635c6f724_50798788',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24f9b7accd49bd457d431b0a8f7c743f113647f6' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\loggednavbar.tpl',
-      1 => 1559418648,
+      1 => 1559483918,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf2d71b886421_54524825 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf3d635c6f724_50798788 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -61,7 +61,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>Ustal wizytę</b></a>
+showVisit"><b>Ustal wizytę</b></a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
@@ -113,7 +113,7 @@ editcontactpage"><b>kontakt</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21398264525cf2d71b885a40_90713060', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2599014835cf3d635c6ef31_36188513', 'content');
 ?>
 
     </div>
@@ -121,12 +121,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21398264525cf2d71b
 </html>
 <?php }
 /* {block 'content'} */
-class Block_21398264525cf2d71b885a40_90713060 extends Smarty_Internal_Block
+class Block_2599014835cf3d635c6ef31_36188513 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_21398264525cf2d71b885a40_90713060',
+    0 => 'Block_2599014835cf3d635c6ef31_36188513',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

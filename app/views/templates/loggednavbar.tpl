@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}logout"><b>Ustal wizytę</b></a>
+                <a class="nav-link" href="{$conf->action_root}showVisit"><b>Ustal wizytę</b></a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="{$conf->action_root}logout"><b>Wyświetl wizyty</b></a>

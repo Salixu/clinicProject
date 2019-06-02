@@ -79,7 +79,7 @@ class loginCtrl{
     getSmarty()->display('mainpageview.tpl');
   }
   public function generateView3(){
-    getSmarty()->assign('page_title', 'Panel logowania');
+    getSmarty()->assign('page_title', 'RemediumDente');
     getSmarty()->assign('page_description', 'Panel logowania');
     getSmarty()->assign('form', $this->form);
     getSmarty()->assign('res', $_SESSION['role']);
