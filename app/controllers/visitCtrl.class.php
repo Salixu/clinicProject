@@ -10,7 +10,7 @@ class visitCtrl{
   }
 
   public function action_bookVisit(){
-    
+    getSmarty()->display('bookvisit.tpl');
   }
 
   public function generateView(){
