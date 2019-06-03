@@ -13,6 +13,8 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `email` VARCHAR(45) NULL,
   `phone_number` VARCHAR(45) NULL,
   `role` VARCHAR(15) NULL,
+  'status' VARCHAR(15) NULL,
+  'lastUpdate' DATE NULL
   PRIMARY KEY (`id_user`));
 
   CREATE TABLE IF NOT EXISTS `clinicdb`.`contact` (
@@ -22,19 +24,23 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
     `phone_number` VARCHAR(256) NULL,
     PRIMARY KEY (`id_contact`));
 
+    CREATE TABLE IF NOT EXISTS 'clinicdb'.'visit'(
+      'id_visit' INT NOT NULL AUTO_INCREMENT,
+      'id_user'  VARCHAR(45) NULL,
+      'id_doctor' VARCHAR(45) NULL,
+      'treatment' VARCHAR(256) NULL,
+      'dateVisit' DATE NULL,
+      'status' VARCHAR(45) NULL,
+    );
+
+
     CREATE TABLE IF NOT EXISTS `clinicdb`.`messages` (
       `id_message` INT NOT NULL AUTO_INCREMENT,
       `name` VARCHAR(45) NULL,
       `topic` VARCHAR(45) NULL,
       `email` VARCHAR(45) NULL,
       `message` VARCHAR(1024) NULL,
-      PRIMARY KEY (`id_message`));
-
-  CREATE TABLE IF NOT EXISTS `clinicdb`.`usersRoles` (
-    `id_user_role` INT NOT NULL AUTO_INCREMENT,
-    `id_role` VARCHAR(1) NULL,
-    `id_user` VARCHAR(45) NULL,
-    PRIMARY KEY (`id_user_role`))
+      PRIMARY KEY (`id_message`))
 
 
 ENGINE = InnoDB;

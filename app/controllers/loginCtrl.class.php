@@ -44,8 +44,12 @@ class loginCtrl{
     $this->role = getDB()->get("users", "role",[
       "email" => $this->form->email
     ]);
+    $this->id_user = getDB()->get("users", "id_user",[
+      "email" => $this->form->email
+    ]);
      if ($emails == $this->form->email && password_verify($this->form->pass, $hash)){
        $_SESSION['role'] = $this->role;
+       $_SESSION['id_user'] = $this->id_user;
        $user = new User($this->form->email, $this->role);
        $_SESSION[$this->role] = serialize($user);
        addRole($user->role);
@@ -75,10 +79,11 @@ class loginCtrl{
     getSmarty()->display('mainpageview.tpl');
   }
   public function generateView3(){
-    getSmarty()->assign('page_title', 'Panel logowania');
+    getSmarty()->assign('page_title', 'RemediumDente');
     getSmarty()->assign('page_description', 'Panel logowania');
     getSmarty()->assign('form', $this->form);
     getSmarty()->assign('res', $_SESSION['role']);
+    getSmarty()->assign('id', $_SESSION['id_user']);
     getSmarty()->display('loggedview.tpl');
   }
 }

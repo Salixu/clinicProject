@@ -14,10 +14,15 @@
   padding-right: 2em;
 }
 
+.paddingRightLogout{
+  padding-right: 17em;
+}
+
 .jumbotron1{
   background-image: url("../img/bamboo.jpg");
   background-size: cover;
 }
+
 
 .buttony{
   color: white;
@@ -51,4 +56,11 @@ li span{
   background-image: url("../img/pageBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 5000px;
 }
