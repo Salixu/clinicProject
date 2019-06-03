@@ -10,6 +10,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://kit.fontawesome.com/81b7fbfbf4.js"></script>
+<script type="text/javascript" src="{$conf->app_url}/js/functions.js"></script>
     <title>{$page_title|default:"Tytuł domyślny"}</title>
   </head>
   <body class = "backgroundImage">
@@ -36,10 +37,5 @@
     <div class = "container">
       {block name=content}Domyslna tresc zawartosci {/block}
     </div>
-    <script>
-      $(document).ready(function(){
-        $('select').formSelect();
-      });
-    </script>
   </body>
 </html>

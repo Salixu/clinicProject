@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-03 22:01:06
+/* Smarty version 3.1.33, created on 2019-06-03 22:05:48
   from 'D:\xamp\htdocs\clinicProject\app\views\bookvisit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf57c827f50b3_78806906',
+  'unifunc' => 'content_5cf57d9cd56fa8_89779168',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79130b633961c588c9b3353b0a253ddc4b94d22a' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\bookvisit.tpl',
-      1 => 1559592065,
+      1 => 1559592342,
       2 => 'file',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:records.tpl' => 1,
   ),
 ),false)) {
-function content_5cf57c827f50b3_78806906 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf57d9cd56fa8_89779168 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19643101485cf57c827ecf77_94780505', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7381967175cf57d9cd4ea08_41343638', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_19643101485cf57c827ecf77_94780505 extends Smarty_Internal_Block
+class Block_7381967175cf57d9cd4ea08_41343638 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_19643101485cf57c827ecf77_94780505',
+    0 => 'Block_7381967175cf57d9cd4ea08_41343638',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -87,13 +87,11 @@ bookVisit','records'); return false;">
                 <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Wyświetl możliwe terminy</button>
             </div>
         </div>
+        </form>
         <div id="records">
           <?php $_smarty_tpl->_subTemplateRender("file:records.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
         </div>
-    </form>
-</div>
-</div>
 <?php
 }
 }

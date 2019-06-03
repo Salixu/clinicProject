@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-03 23:38:48
-  from 'D:\xamp\htdocs\clinicProject\app\views\templates\loggednavbar.tpl' */
+/* Smarty version 3.1.33, created on 2019-06-03 23:39:51
+  from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf59368a9d334_72548338',
+  'unifunc' => 'content_5cf593a74cb0f8_70522109',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '24f9b7accd49bd457d431b0a8f7c743f113647f6' => 
+    '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
-      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\loggednavbar.tpl',
-      1 => 1559597916,
+      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
+      1 => 1559597925,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf59368a9d334_72548338 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf593a74cb0f8_70522109 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -46,6 +46,9 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
  src="https://code.jquery.com/jquery-1.11.1.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
+ src="https://kit.fontawesome.com/81b7fbfbf4.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /js/functions.js"><?php echo '</script'; ?>
 >
@@ -56,68 +59,31 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-transparent backgroundcolor">
           <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
-          <a class="navbar-brand" href="#"><span class = "test">RemediumDente</span></a>
+          <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+mainPageshow"><span class = "test">RemediumDente</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <?php if ($_smarty_tpl->tpl_vars['res']->value == 'user') {?>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-showVisit"><b>Ustal wizytę</b></a>
+loginShow"><b>Zaloguj się</b></a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>Wyświetl wizyty</b></a>
-              </li>
-              <li class="nav-item paddingRightLogout">
-                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-userprofileShow"><b>Edytuj profil</b></a>
+registrationShow"><b>Zarejestruj się</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>Wyloguj</b></a>
+contactpageShow"><b>Kontakt</b></a>
               </li>
             </ul>
           </div>
-
-          <?php } elseif ($_smarty_tpl->tpl_vars['res']->value == 'recep') {?>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item">
-                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>recep</b></a>
-              </li>
-            </ul>
-          </div>
-          <?php } elseif ($_smarty_tpl->tpl_vars['res']->value == 'doctor') {?>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item">
-                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>doc</b></a>
-              </li>
-            </ul>
-          </div>
-          <?php } elseif ($_smarty_tpl->tpl_vars['res']->value == 'admin') {?>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item">
-                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>admin</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-editcontactpage"><b>kontakt</b></a>
-              </li>
-            </ul>
-          </div>
-          <?php }?>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8443517355cf59368a9c771_33012782', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6088280985cf593a74ca4a4_71020275', 'content');
 ?>
 
     </div>
@@ -125,12 +91,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8443517355cf59368a
 </html>
 <?php }
 /* {block 'content'} */
-class Block_8443517355cf59368a9c771_33012782 extends Smarty_Internal_Block
+class Block_6088280985cf593a74ca4a4_71020275 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_8443517355cf59368a9c771_33012782',
+    0 => 'Block_6088280985cf593a74ca4a4_71020275',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

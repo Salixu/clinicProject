@@ -51,4 +51,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO contact (email, adress, phone_number)
-VALUES ('email', 'adress', 'phone number'));
+VALUES ('email', 'adress', 'phone number');
+
+INSERT INTO hours (`10`, `11`, `12`, `13`, `14` ,`15` , `16`, `17`, `18`)
+VALUES ('10', '11', '12', '13', '14', '15', '16', '17', '18' );
