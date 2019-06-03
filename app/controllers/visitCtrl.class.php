@@ -1,16 +1,22 @@
 <?php
 namespace app\controllers;
+use app\forms\visitForm;
 
 class visitCtrl{
   public function __construct(){
+    $this->form = new visitForm();
   }
 
+  public function getParams(){
+    $this->name = getFromRequest('Szymon');
+  }
   public function action_showVisit(){
     $this->generateView();
   }
 
   public function action_bookVisit(){
-    getSmarty()->display('bookvisit.tpl');
+    getSmarty()->assign('szym', $this->form->name);
+    getSmarty()->display('records.tpl');
   }
 
   public function generateView(){

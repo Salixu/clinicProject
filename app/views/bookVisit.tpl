@@ -39,10 +39,8 @@
                 <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Wyświetl możliwe terminy</button>
             </div>
         </div>
+        </form>
         <div id="records">
           {include file = "records.tpl"}
         </div>
-    </form>
-</div>
-</div>
 {/block}

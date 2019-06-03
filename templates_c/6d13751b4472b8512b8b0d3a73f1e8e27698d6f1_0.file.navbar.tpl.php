@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-31 16:26:02
+/* Smarty version 3.1.33, created on 2019-06-03 23:39:54
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf1397a081919_36474915',
+  'unifunc' => 'content_5cf593aa3ca946_86474023',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6d13751b4472b8512b8b0d3a73f1e8e27698d6f1' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\navbar.tpl',
-      1 => 1559312756,
+      1 => 1559597925,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf1397a081919_36474915 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cf593aa3ca946_86474023 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -47,6 +47,10 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 >
 <?php echo '<script'; ?>
  src="https://kit.fontawesome.com/81b7fbfbf4.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/js/functions.js"><?php echo '</script'; ?>
 >
     <title><?php echo (($tmp = @$_smarty_tpl->tpl_vars['page_title']->value)===null||$tmp==='' ? "Tytuł domyślny" : $tmp);?>
 </title>
@@ -79,27 +83,20 @@ contactpageShow"><b>Kontakt</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20139386605cf1397a080da1_60145499', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6704821895cf593aa3c9c61_33663476', 'content');
 ?>
 
     </div>
-    <?php echo '<script'; ?>
->
-      $(document).ready(function(){
-        $('select').formSelect();
-      });
-    <?php echo '</script'; ?>
->
   </body>
 </html>
 <?php }
 /* {block 'content'} */
-class Block_20139386605cf1397a080da1_60145499 extends Smarty_Internal_Block
+class Block_6704821895cf593aa3c9c61_33663476 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_20139386605cf1397a080da1_60145499',
+    0 => 'Block_6704821895cf593aa3c9c61_33663476',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
