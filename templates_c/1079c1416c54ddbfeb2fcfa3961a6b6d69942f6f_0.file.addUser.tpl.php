@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-07 18:42:26
-  from 'D:\xamp\htdocs\clinicProject\app\views\registration.tpl' */
+/* Smarty version 3.1.33, created on 2019-06-07 18:39:42
+  from 'D:\xamp\htdocs\clinicProject\app\views\addUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfa93f25cd4e0_36189278',
+  'unifunc' => 'content_5cfa934ec9b232_01577936',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'fd6c256cb756f1addf0002deea3eb69189a54bed' => 
+    '1079c1416c54ddbfeb2fcfa3961a6b6d69942f6f' => 
     array (
-      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\registration.tpl',
-      1 => 1559925556,
+      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\addUser.tpl',
+      1 => 1559925570,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfa93f25cd4e0_36189278 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfa934ec9b232_01577936 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10500432025cfa93f25bfd21_45056070', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21316595485cfa934ec8d287_24611222', 'content');
 ?>
 
-<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
+<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_10500432025cfa93f25bfd21_45056070 extends Smarty_Internal_Block
+class Block_21316595485cfa934ec8d287_24611222 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_10500432025cfa93f25bfd21_45056070',
+    0 => 'Block_21316595485cfa934ec8d287_24611222',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
 <div class="container">
     <form class="form-horizontal" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-CreateAccount">
+addUser">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -63,13 +63,6 @@ CreateAccount">
                         <input type="text" name="name" class="form-control" id="name"
                                placeholder="Imie" required autofocus>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
                 </div>
             </div>
         </div>
@@ -143,6 +136,7 @@ CreateAccount">
                                id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
+
                 <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
                   <ul>
                   <?php
@@ -158,12 +152,43 @@ foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </ul>
                 <?php }?>
+
+                <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isInfo()) {?>
+                  <ul>
+                  <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getInfos(), 'info');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['info']->value) {
+?>
+                  <li><span class="greenText"><?php echo $_smarty_tpl->tpl_vars['info']->value;?>
+</span></li>
+                  <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                </ul>
+                <?php }?>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="surname">Rola </label>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group">
+                  <select name="role">
+                      <option value="admin">admin</option>
+                      <option value="doctor">doktor</option>
+                      <option value="recep">recepcjonista</option>
+                  </select>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Zarejestruj</button>
+                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Dodaj</button>
             </div>
         </div>
     </form>
