@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-03 23:38:48
+/* Smarty version 3.1.33, created on 2019-06-07 17:47:06
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\loggednavbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cf59368a9d334_72548338',
+  'unifunc' => 'content_5cfa86fa860ce9_80320178',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24f9b7accd49bd457d431b0a8f7c743f113647f6' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\loggednavbar.tpl',
-      1 => 1559597916,
+      1 => 1559922398,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cf59368a9d334_72548338 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfa86fa860ce9_80320178 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -56,7 +56,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-transparent backgroundcolor">
           <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /img/tooth.png" width="45" height="45" class="d-inline-block align-top" alt="">
-          <a class="navbar-brand" href="#"><span class = "test">RemediumDente</span></a>
+          <a class="navbar-brand paddingRight" href="#"><span class = "test">RemediumDente</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -103,13 +103,17 @@ logout"><b>doc</b></a>
           <?php } elseif ($_smarty_tpl->tpl_vars['res']->value == 'admin') {?>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item">
+              <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>admin</b></a>
+generateViewAddUser"><b>Dodaj konto</b></a>
+              </li>
+              <li class="nav-item paddingRightLogout">
+                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+editcontactpage"><b>Kontakt</b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-editcontactpage"><b>kontakt</b></a>
+logout"><b>Wyloguj</b></a>
               </li>
             </ul>
           </div>
@@ -117,7 +121,7 @@ editcontactpage"><b>kontakt</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8443517355cf59368a9c771_33012782', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12566568565cfa86fa85fc53_13126270', 'content');
 ?>
 
     </div>
@@ -125,12 +129,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8443517355cf59368a
 </html>
 <?php }
 /* {block 'content'} */
-class Block_8443517355cf59368a9c771_33012782 extends Smarty_Internal_Block
+class Block_12566568565cfa86fa85fc53_13126270 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_8443517355cf59368a9c771_33012782',
+    0 => 'Block_12566568565cfa86fa85fc53_13126270',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
