@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-21 21:12:10
+/* Smarty version 3.1.33, created on 2019-06-07 18:42:26
   from 'D:\xamp\htdocs\clinicProject\app\views\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ce44d8a24ac35_12041754',
+  'unifunc' => 'content_5cfa93f25cd4e0_36189278',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fd6c256cb756f1addf0002deea3eb69189a54bed' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\registration.tpl',
-      1 => 1558465251,
+      1 => 1559925556,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ce44d8a24ac35_12041754 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfa93f25cd4e0_36189278 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8904727425ce44d8a23dad8_48535036', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10500432025cfa93f25bfd21_45056070', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "navbar.tpl");
 }
 /* {block 'content'} */
-class Block_8904727425ce44d8a23dad8_48535036 extends Smarty_Internal_Block
+class Block_10500432025cfa93f25bfd21_45056070 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_8904727425ce44d8a23dad8_48535036',
+    0 => 'Block_10500432025cfa93f25bfd21_45056070',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -150,7 +150,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
 ?>
-                  <li><span><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
+                  <li><span class="redText"><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
 </span></li>
                   <?php
 }
