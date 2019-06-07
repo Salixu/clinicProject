@@ -6,5 +6,6 @@ class RegisterForm{
   public $email;
   public $surname;
   public $passConfirm;
+  public $role;
 }
 ?>

@@ -48,8 +48,12 @@
   background: rgba(0,0,0,0.4);
 }
 
-li span{
-  color: #ef0e19;
+.redText{
+  color: red;
+}
+
+.greenText{
+  color: #228B22;
 }
 
 .backgroundImage{

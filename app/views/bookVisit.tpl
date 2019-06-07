@@ -20,25 +20,30 @@
                 <div class="form-group">
                   <label for="date"><b>Wybierz specjaliste:</b></label>
                 </div>
-                <div> &nbsp <img src="{$conf->app_url}/img/SzymonOleksy.jpg" alt="Paris" style="width:150px"> &nbsp &nbsp &nbsp
-                <img src="{$conf->app_url}/img/JaroslawOgórek.jpg" alt="Paris" style="width:150px"> &nbsp &nbsp &nbsp
-                <img src="{$conf->app_url}/img/KalinaTrautzel.jpg" alt="Paris" style="width:150px">
-              &nbsp <input type="checkbox" name="Jaroslaw"> Dr Jaroslaw Ogórek &nbsp &nbsp  <input type="checkbox" name="Szymon"> Dr Szymon Oleksy &nbsp &nbsp &nbsp &nbsp <input type="checkbox" name="Kalina" value="Bike"> Dr Kalina Trautzel
-            </div>
             </div>
             </div>
         </div>
+        <hr class="featurette-divider">
         <div class="row">
-            <div class="col-md-3 field-label-responsive">
-                <label for="name"></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Wyświetl możliwe terminy</button>
-            </div>
-        </div>
+          <div class="col-lg-4">
+            <img src="{$conf->app_url}/img/JaroslawOgórek.jpg" alt="Generic placeholder image" width="140" height="160">
+            <h2>Certyfikaty</h2>
+            <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary buttony" href="https://www.mynextmove.org/profile/ext/cert/29-1021.00" target="_blank" role="button">Sprawdź! &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img src="{$conf->app_url}/img/KalinaTrautzel.jpg" alt="Generic placeholder image" width="140" height="160">
+              <h2>Certyfikaty</h2>
+              <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-secondary buttony" href="https://www.mynextmove.org/profile/ext/cert/29-1021.00" target="_blank" role="button">Sprawdź! &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="{$conf->app_url}/img/SzymonOleksy.jpg" alt="Generic placeholder image" width="140" height="160">
+            <h2>Certyfikaty</h2>
+            <p>W naszej klinice pracują specjalisci posiadający certyfikaty, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary buttony" href="https://www.mynextmove.org/profile/ext/cert/29-1021.00" target="_blank" role="button">Sprawdź! &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
         </form>
         <div id="records">
           {include file = "records.tpl"}

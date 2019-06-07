@@ -1,7 +1,7 @@
-{extends file ="navbar.tpl"}
+{extends file ="loggednavbar.tpl"}
 {block name=content}
 <div class="container">
-    <form class="form-horizontal" method="POST" action="{$conf->action_url}CreateAccount">
+    <form class="form-horizontal" method="POST" action="{$conf->action_url}addUser">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -19,13 +19,6 @@
                         <input type="text" name="name" class="form-control" id="name"
                                placeholder="Imie" required autofocus>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="form-control-feedback">
-                        <span class="text-danger align-middle">
-                            <!-- Put name validation error messages here -->
-                        </span>
                 </div>
             </div>
         </div>
@@ -99,6 +92,7 @@
                                id="passConfirm" placeholder="Haslo" required>
                     </div>
                 </div>
+
                 {if $msgs->isError()}
                   <ul>
                   {foreach  $msgs->getErrors() as $err}
@@ -108,12 +102,37 @@
                   {/foreach}
                 </ul>
                 {/if}
+
+                {if $msgs->isInfo()}
+                  <ul>
+                  {foreach  $msgs->getInfos() as $info}
+                  {strip}
+                    <li><span class="greenText">{$info}</span></li>
+                  {/strip}
+                  {/foreach}
+                </ul>
+                {/if}
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+                <label for="surname">Rola </label>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group">
+                  <select name="role">
+                      <option value="admin">admin</option>
+                      <option value="doctor">doktor</option>
+                      <option value="recep">recepcjonista</option>
+                  </select>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Zarejestruj</button>
+                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Dodaj</button>
             </div>
         </div>
     </form>

@@ -146,7 +146,7 @@
                 <ul>
                 {foreach  $msgs->getErrors() as $err}
                 {strip}
-                  <li><span>{$err}</span></li>
+                  <li><span class="redText">{$err}</span></li>
                 {/strip}
                 {/foreach}
               </ul>
