@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-07 18:42:09
+/* Smarty version 3.1.33, created on 2019-06-08 12:38:19
   from 'D:\xamp\htdocs\clinicProject\app\views\loggedview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfa93e1607cb1_24476336',
+  'unifunc' => 'content_5cfb901b3fb4a6_57115731',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '299116742fba1d247121d42dca66aace9c35a40f' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\loggedview.tpl',
-      1 => 1559925726,
+      1 => 1559990296,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfa93e1607cb1_24476336 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfb901b3fb4a6_57115731 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5074080985cfa93e15ff378_61999265', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_79922865cfb901b3f2341_30159267', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_5074080985cfa93e15ff378_61999265 extends Smarty_Internal_Block
+class Block_79922865cfb901b3f2341_30159267 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_5074080985cfa93e15ff378_61999265',
+    0 => 'Block_79922865cfb901b3f2341_30159267',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -79,7 +79,7 @@ showVisit" role="button">Wypelnij formularz &raquo;</a></p>
 /img/gear.svg" alt="Generic placeholder image" width="70" height="70">
             <h2>Edytuj profil</h2>
             <p><a class="btn btn-secondary buttony" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-profileUpdate" role="button">Edytuj &raquo;</a></p>
+userprofileUpdate" role="button">Edytuj &raquo;</a></p>
           </div>
           <div class="col-lg-4">
           </div>
@@ -94,7 +94,7 @@ profileUpdate" role="button">Edytuj &raquo;</a></p>
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel recepcji</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>
@@ -109,7 +109,7 @@ Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel lekarza</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>
@@ -124,7 +124,7 @@ Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel Lekarza</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>

@@ -3,19 +3,27 @@ namespace app\controllers;
 use app\forms\visitForm;
 
 class visitCtrl{
+  public $szym = null;
   public function __construct(){
     $this->form = new visitForm();
   }
 
   public function getParams(){
-    $this->name = getFromRequest('Szymon');
+    $this->form->date = getFromRequest('date');
+    $this->form->spec = $_POST['spec'];
+    $this->form->treat = $_POST['treat'];
   }
   public function action_showVisit(){
     $this->generateView();
   }
 
+  // public function load_data(){
+  //    $this->records = getDB()->select("",[])
+  // }
+
   public function action_bookVisit(){
-    getSmarty()->assign('szym', $this->form->name);
+    $this->szym = 'abc';
+    getSmarty()->assign('szym', $this->szym);
     getSmarty()->display('records.tpl');
   }
 
@@ -23,6 +31,7 @@ class visitCtrl{
     getSmarty()->assign('page_title', 'RemediumDente');
     getSmarty()->assign('page_description', 'RemediumDente');
     getSmarty()->assign('res', $_SESSION['role']);
+    getSmarty()->assign('szym', $this->szym);
     getSmarty()->display('bookvisit.tpl');
   }
 }
