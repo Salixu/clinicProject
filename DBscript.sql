@@ -24,14 +24,15 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
     `phone_number` VARCHAR(256) NULL,
     PRIMARY KEY (`id_contact`));
 
-    CREATE TABLE IF NOT EXISTS 'clinicdb'.'visit'(
-      'id_visit' INT NOT NULL AUTO_INCREMENT,
-      'id_user'  VARCHAR(45) NULL,
-      'id_doctor' VARCHAR(45) NULL,
-      'treatment' VARCHAR(256) NULL,
-      'dateVisit' DATE NULL,
-      'status' VARCHAR(45) NULL,
-    );
+    CREATE TABLE IF NOT EXISTS `clinicdb`.`visit`(
+      `id_visit` INT NOT NULL AUTO_INCREMENT,
+      `id_user`  VARCHAR(45) NULL,
+      `id_doctor` VARCHAR(45) NULL,
+      `treatment` VARCHAR(256) NULL,
+      `dateVisit` DATE NULL,
+      `time` DATE NULL,
+      `status` VARCHAR(45) NULL,
+      PRIMARY KEY (`id_visit`));
 
 
     CREATE TABLE IF NOT EXISTS `clinicdb`.`messages` (
