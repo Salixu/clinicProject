@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
       `id_doctor` VARCHAR(45) NULL,
       `treatment` VARCHAR(256) NULL,
       `dateVisit` DATE NULL,
-      `time` DATE NULL,
+      `time` TIME NULL,
       `status` VARCHAR(45) NULL,
       PRIMARY KEY (`id_visit`));
 

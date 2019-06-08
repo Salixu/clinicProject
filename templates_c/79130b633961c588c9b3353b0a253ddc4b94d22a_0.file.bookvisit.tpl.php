@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-08 15:14:23
+/* Smarty version 3.1.33, created on 2019-06-08 19:48:09
   from 'D:\xamp\htdocs\clinicProject\app\views\bookvisit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfbb4af45f742_31081742',
+  'unifunc' => 'content_5cfbf4d9a03cf8_48332571',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79130b633961c588c9b3353b0a253ddc4b94d22a' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\bookvisit.tpl',
-      1 => 1559999661,
+      1 => 1560016087,
       2 => 'file',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:records.tpl' => 1,
   ),
 ),false)) {
-function content_5cfbb4af45f742_31081742 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfbf4d9a03cf8_48332571 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15075724665cfbb4af456ad9_15817765', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11841574085cfbf4d9998405_82362536', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_15075724665cfbb4af456ad9_15817765 extends Smarty_Internal_Block
+class Block_11841574085cfbf4d9998405_82362536 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_15075724665cfbb4af456ad9_15817765',
+    0 => 'Block_11841574085cfbf4d9998405_82362536',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -70,7 +70,7 @@ bookVisit','records'); return false;">
                     <option value="Szymon">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
-                    <label for="treat"><b>Wybierz specjaliste:</b></label>
+                    <label for="treat"><b>Wybierz usluge:</b></label>
                     <select name="treat">
                       <option value="a">Borowanie zęba</option>
                       <option value="b">ligula porta</option>
@@ -114,6 +114,21 @@ bookVisit','records'); return false;">
               <div class="col-md-3 field-label-responsive">
               </div>
               <div class="col-md-6">
+                <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
+                  <ul>
+                  <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getErrors(), 'err');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['err']->value) {
+?>
+                  <li><span class="redText"><?php echo $_smarty_tpl->tpl_vars['err']->value;?>
+</span></li>
+                  <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                </ul>
+                <?php }?>
                   <div class="form-group">
                     <div id="records">
                     <?php $_smarty_tpl->_subTemplateRender("file:records.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);

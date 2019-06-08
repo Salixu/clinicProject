@@ -8,6 +8,9 @@ class visitCtrl{
   public $isDoc;
   public function __construct(){
     $this->form = new visitForm();
+    $this->form->date = null;
+    $this->form->doc = null;
+    $this->form->treat = null;
   }
 
   public function getParams(){
@@ -19,6 +22,16 @@ class visitCtrl{
   public function action_showVisit(){
     $this->generateView();
   }
+
+  public function validate(){
+    if ($this->form->date == null || $this->form->doc == null || $this->form->treat == null){
+      if ($this->form->date == null){
+        getMessages()->addError("Wybierz date");
+        return false;
+      }
+    return true;
+  }
+}
 
   public function load_data(){
      $this->doc = getDB()->get("users", ["id_user"], [
@@ -33,11 +46,36 @@ class visitCtrl{
    }
 
   public function action_bookVisit(){
-    $this->load_data();
-    $this->szym = 'abc';
+    $this->getParams();
+    if ($this->validate() == true){
+    $this->record = getDB()->get("hours",[
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+    ],[
+      'id_contact' => '0'
+    ]);
+    $this->szym = 'dupa';
     getSmarty()->assign('szym', $this->szym);
-    getSmarty()->assign('record', $this->isDoc);
+    getSmarty()->assign('record', $this->record);
     getSmarty()->display('records.tpl');
+  }else{
+    $this->record = null;
+    $this->szym = 'lol';
+    getSmarty()->assign('szym', $this->szym);
+    getSmarty()->assign('record', $this->record);
+    getSmarty()->display('records.tpl');
+  }
+  }
+
+  public function action_bookingVisit(){
+
   }
 
   public function generateView(){

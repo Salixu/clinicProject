@@ -25,7 +25,7 @@
                     <option value="Szymon">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
-                    <label for="treat"><b>Wybierz specjaliste:</b></label>
+                    <label for="treat"><b>Wybierz usluge:</b></label>
                     <select name="treat">
                       <option value="a">Borowanie zęba</option>
                       <option value="b">ligula porta</option>
@@ -66,6 +66,15 @@
               <div class="col-md-3 field-label-responsive">
               </div>
               <div class="col-md-6">
+                {if $msgs->isError()}
+                  <ul>
+                  {foreach  $msgs->getErrors() as $err}
+                  {strip}
+                    <li><span class="redText">{$err}</span></li>
+                  {/strip}
+                  {/foreach}
+                </ul>
+                {/if}
                   <div class="form-group">
                     <div id="records">
                     {include file = "records.tpl"}
