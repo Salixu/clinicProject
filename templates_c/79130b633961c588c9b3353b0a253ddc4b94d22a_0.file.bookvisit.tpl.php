@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-08 19:48:09
+/* Smarty version 3.1.33, created on 2019-06-09 18:10:27
   from 'D:\xamp\htdocs\clinicProject\app\views\bookvisit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfbf4d9a03cf8_48332571',
+  'unifunc' => 'content_5cfd2f73673a75_54578501',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79130b633961c588c9b3353b0a253ddc4b94d22a' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\bookvisit.tpl',
-      1 => 1560016087,
+      1 => 1560096625,
       2 => 'file',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:records.tpl' => 1,
   ),
 ),false)) {
-function content_5cfbf4d9a03cf8_48332571 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cfd2f73673a75_54578501 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11841574085cfbf4d9998405_82362536', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13917565485cfd2f73661fa4_53506474', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_11841574085cfbf4d9998405_82362536 extends Smarty_Internal_Block
+class Block_13917565485cfd2f73661fa4_53506474 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_11841574085cfbf4d9998405_82362536',
+    0 => 'Block_13917565485cfd2f73661fa4_53506474',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,9 +65,9 @@ bookVisit','records'); return false;">
                 <div class="form-group">
                   <label for="spec"><b>Wybierz specjaliste:</b></label>
                   <select name="spec">
-                    <option value="Jaroslaw">Jaroslaw Ogorek</option>
-                    <option value="Kalina">Kalina Trautzel</option>
-                    <option value="Szymon">Szymon Oleksy</option>
+                    <option value="jarek">Jaroslaw Ogorek</option>
+                    <option value="kalinka">Kalina Trautzel</option>
+                    <option value="szymkek">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
                     <label for="treat"><b>Wybierz usluge:</b></label>
@@ -91,7 +91,6 @@ bookVisit','records'); return false;">
 /img/JaroslawOgórek.jpg" alt="Generic placeholder image" width="140" height="160">
             <h2>Dr.Jaroslaw Ogórek</h2>
             <p>Vestibulum id ligula portaVestibulum id ligula porta, Vestibulum id ligula portadapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <button class="btn btn-secondary buttony" type="submit">Sprawdź termin! &raquo;</button>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
               <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
@@ -105,7 +104,6 @@ bookVisit','records'); return false;">
 /img/SzymonOleksy.jpg" alt="Generic placeholder image" width="140" height="160">
             <h2>Dr.Szymon Oleksy</h2>
             <p>Dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <button class="btn btn-secondary buttony"  type="submit">Sprawdź termin! &raquo; </button>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         </form>

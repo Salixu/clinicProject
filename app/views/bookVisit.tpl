@@ -20,9 +20,9 @@
                 <div class="form-group">
                   <label for="spec"><b>Wybierz specjaliste:</b></label>
                   <select name="spec">
-                    <option value="Jaroslaw">Jaroslaw Ogorek</option>
-                    <option value="Kalina">Kalina Trautzel</option>
-                    <option value="Szymon">Szymon Oleksy</option>
+                    <option value="jarek">Jaroslaw Ogorek</option>
+                    <option value="kalinka">Kalina Trautzel</option>
+                    <option value="szymkek">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
                     <label for="treat"><b>Wybierz usluge:</b></label>
@@ -45,7 +45,6 @@
             <img src="{$conf->app_url}/img/JaroslawOgórek.jpg" alt="Generic placeholder image" width="140" height="160">
             <h2>Dr.Jaroslaw Ogórek</h2>
             <p>Vestibulum id ligula portaVestibulum id ligula porta, Vestibulum id ligula portadapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <button class="btn btn-secondary buttony" type="submit">Sprawdź termin! &raquo;</button>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
               <img src="{$conf->app_url}/img/KalinaTrautzel.jpg" alt="Generic placeholder image" width="140" height="160">
@@ -57,7 +56,6 @@
             <img src="{$conf->app_url}/img/SzymonOleksy.jpg" alt="Generic placeholder image" width="140" height="160">
             <h2>Dr.Szymon Oleksy</h2>
             <p>Dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <button class="btn btn-secondary buttony"  type="submit">Sprawdź termin! &raquo; </button>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         </form>

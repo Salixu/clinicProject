@@ -4,4 +4,5 @@ class visitForm{
   public $date;
   public $spec;
   public $treat;
+  public $time;
 }
