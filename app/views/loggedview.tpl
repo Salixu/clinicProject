@@ -31,7 +31,7 @@
           <div class="col-lg-4">
             <img  src="{$conf->app_url}/img/gear.svg" alt="Generic placeholder image" width="70" height="70">
             <h2>Edytuj profil</h2>
-            <p><a class="btn btn-secondary buttony" href="{$conf->action_root}profileUpdate" role="button">Edytuj &raquo;</a></p>
+            <p><a class="btn btn-secondary buttony" href="{$conf->action_root}userprofileUpdate" role="button">Edytuj &raquo;</a></p>
           </div>
           <div class="col-lg-4">
           </div>
@@ -46,7 +46,7 @@
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel recepcji</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>
@@ -61,7 +61,7 @@ Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel lekarza</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>
@@ -76,7 +76,7 @@ Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 
 <hr class="featurette-divider">
   <div class="container">
-    <h1 class="display-4"><span class ="test2"><b>Panel Lekarza</b></span></h1>
+    <h1 class="display-4"><span class ="test2"><b>Panel administratora</b></span></h1>
 <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Aliquam sed tellus sed eros lobortis sollicitudin ac vel sapien.
 </b></div>

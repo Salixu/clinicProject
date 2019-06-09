@@ -107,7 +107,7 @@
                   <ul>
                   {foreach  $msgs->getInfos() as $info}
                   {strip}
-                    <li><span class="greenText">{$info}</span></li>
+                    <li><b><span class="greenText">{$info}</span></b></li>
                   {/strip}
                   {/foreach}
                 </ul>
