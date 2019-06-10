@@ -20,6 +20,7 @@
   getRouter()->addRoute('addUser', 'addUserCtrl', ['admin']);
   getRouter()->addRoute('generateViewAddUser', 'addUserCtrl', ['admin']);
   getRouter()->addRoute('bookingVisit', 'visitCtrl', ['user']);
+  getRouter()->addRoute('showUserVisits', 'userVisits', ['user']);
 
   getRouter()->go();
 
