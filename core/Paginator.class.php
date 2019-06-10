@@ -1,13 +1,13 @@
 <?php
 
     namespace core;
-    
+
     class Paginator{
 
         public function paginator($itemsOnPage, &$totalItems, $activePage, &$offset){
 
             $activePage = max(1, $activePage);
-            $maxPages   =   round($totalItems/$itemsOnPage);
+            $maxPages   =   ceil($totalItems/$itemsOnPage);
             if( $activePage > $maxPages )
                 $activePage = 1;
             $paginator = array(
