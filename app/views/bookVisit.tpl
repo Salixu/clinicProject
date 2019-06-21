@@ -27,12 +27,12 @@
                   <div class="form-group">
                     <label for="treat"><b>Wybierz usluge:</b></label>
                     <select name="treat">
-                      <option value="a">Borowanie zęba</option>
-                      <option value="b">ligula porta</option>
-                      <option value="c">euismod semper</option>
-                      <option value="d">Vestibulum</option>
-                      <option value="e">Wegestas eget quam</option>
-                      <option value="f">Konsultacja</option>
+                      <option value="1">Borowanie zęba</option>
+                      <option value="2">ligula porta</option>
+                      <option value="3">euismod semper</option>
+                      <option value="4">Vestibulum</option>
+                      <option value="5">Wegestas eget quam</option>
+                      <option value="6">Konsultacja</option>
                     </select>
                   </div>
                 </div>

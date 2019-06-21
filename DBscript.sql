@@ -34,6 +34,11 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
       `status` VARCHAR(45) NULL,
       PRIMARY KEY (`id_visit`));
 
+      CREATE TABLE IF NOT EXISTS `clinicdb`.`treatment`(
+        `id_treatment` INT NOT NULL AUTO_INCREMENT,
+        `description` VARCHAR(1024) NULL,
+        `treatment` VARCHAR(256) NULL,
+        PRIMARY KEY (`id_treatment`));
 
     CREATE TABLE IF NOT EXISTS `clinicdb`.`messages` (
       `id_message` INT NOT NULL AUTO_INCREMENT,
@@ -54,5 +59,20 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 INSERT INTO contact (email, adress, phone_number)
 VALUES ('email', 'adress', 'phone number');
 
-INSERT INTO hours (`10`, `11`, `12`, `13`, `14` ,`15` , `16`, `17`, `18`)
-VALUES ('10', '11', '12', '13', '14', '15', '16', '17', '18' );
+INSERT INTO treatment (treatment, description)
+VALUES ('Borowanie zęba', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
+
+INSERT INTO treatment (treatment, description)
+VALUES ('Ligula porta', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
+
+INSERT INTO treatment (treatment, description)
+VALUES ('euismod semper', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
+
+INSERT INTO treatment (treatment, description)
+VALUES ('Vestibulum', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
+
+INSERT INTO treatment (treatment, description)
+VALUES ('Wegestas eget quam', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
+
+INSERT INTO treatment (treatment, description)
+VALUES ('Konsultacja', 'Wegestas eget quamWegestas eget quamWegestas eget quam');
