@@ -22,8 +22,8 @@ class userVisits{
     $this->paginator = $this->pag->paginator(5, $this->totalItems, $this->page, $this->offset);
     $this->clients = getDB()->select("visit",[
         "id_doctor",
-        "treatment",
         "dateVisit",
+        "treatment",
         "time",
         "id_user",
     ], [
