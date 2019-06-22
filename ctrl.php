@@ -21,7 +21,9 @@
   getRouter()->addRoute('generateViewAddUser', 'addUserCtrl', ['admin']);
   getRouter()->addRoute('bookingVisit', 'visitCtrl', ['user']);
   getRouter()->addRoute('showUserVisits', 'userVisits', ['user']);
-
+  getRouter()->addRoute('upcomingVisits', 'userVisits', ['user']);
+  getRouter()->addRoute('doneVisits', 'userVisits', ['user']);
+  
   getRouter()->go();
 
  ?>

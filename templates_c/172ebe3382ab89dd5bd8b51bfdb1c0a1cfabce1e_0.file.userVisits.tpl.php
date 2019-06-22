@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-22 14:55:06
+/* Smarty version 3.1.33, created on 2019-06-22 17:09:04
   from 'D:\xamp\htdocs\clinicProject\app\views\userVisits.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0e252ac4b9b9_00160904',
+  'unifunc' => 'content_5d0e4490b325c3_50709349',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '172ebe3382ab89dd5bd8b51bfdb1c0a1cfabce1e' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\userVisits.tpl',
-      1 => 1561208095,
+      1 => 1561216138,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0e252ac4b9b9_00160904 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0e4490b325c3_50709349 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3690903685d0e252ac3abc8_24548363', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15390049295d0e4490b21624_73148463', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_3690903685d0e252ac3abc8_24548363 extends Smarty_Internal_Block
+class Block_15390049295d0e4490b21624_73148463 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_3690903685d0e252ac3abc8_24548363',
+    0 => 'Block_15390049295d0e4490b21624_73148463',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -103,7 +103,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                       <div class="col">
                       </div>
                     </div>
-                  </div>
+</div>
 <?php
 }
 }

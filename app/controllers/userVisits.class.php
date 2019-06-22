@@ -38,9 +38,8 @@ class userVisits{
 
   }
 
-  public function action_showUserVisits(){
+  public function action_upcomingVisits(){
                 $this->load_data();
-
                 getSmarty()->assign("paginator", $this->paginator);
                 getSmarty()->assign("record", $this->clients);
                 getSmarty()->assign("total", $this->totalItems);
@@ -51,11 +50,15 @@ class userVisits{
                 getSmarty()->assign('active', 'showUserVisits');
                 getSmarty()->display("userVisits.tpl");
   }
+
+  public function action_generateViewVisits(){
+    $this->generateViewVisits();
+  }
   public function generateViewVisits(){
     getSmarty()->assign('page_title', 'RemediumDente');
     getSmarty()->assign('page_description', 'RemediumDente');
     getSmarty()->assign('res', $_SESSION['role']);
-    getSmarty()->display('userVisits.tpl');
+    getSmarty()->display('userVisitGlobal.tpl');
   }
 }
  ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-10 12:24:50
+/* Smarty version 3.1.33, created on 2019-06-22 16:33:08
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\loggednavbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfe2ff23e6422_79194749',
+  'unifunc' => 'content_5d0e3c24b2fa95_88568201',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24f9b7accd49bd457d431b0a8f7c743f113647f6' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\loggednavbar.tpl',
-      1 => 1560162248,
+      1 => 1561213983,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cfe2ff23e6422_79194749 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0e3c24b2fa95_88568201 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -69,7 +69,7 @@ showVisit"><b>Ustal wizytę</b></a>
               </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-showUserVisits"><b>Wyświetl wizyty</b></a>
+generateViewVisits"><b>Wyświetl wizyty</b></a>
               </li>
               <li class="nav-item paddingRightLogout">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
@@ -121,7 +121,7 @@ logout"><b>Wyloguj</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11404156635cfe2ff23e4d78_24117572', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14046276625d0e3c24b2efc7_06547673', 'content');
 ?>
 
     </div>
@@ -129,12 +129,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11404156635cfe2ff2
 </html>
 <?php }
 /* {block 'content'} */
-class Block_11404156635cfe2ff23e4d78_24117572 extends Smarty_Internal_Block
+class Block_14046276625d0e3c24b2efc7_06547673 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_11404156635cfe2ff23e4d78_24117572',
+    0 => 'Block_14046276625d0e3c24b2efc7_06547673',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

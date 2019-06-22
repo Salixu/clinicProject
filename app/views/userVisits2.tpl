@@ -1,5 +1,4 @@
-{extends file ="loggednavbar.tpl"}
-{block name=content}
+
 <div class="container">
       <table class="table table-hover">
     <thead>
@@ -39,5 +38,4 @@
                       <div class="col">
                       </div>
                     </div>
-</div>
-{/block}
+                  </div>
