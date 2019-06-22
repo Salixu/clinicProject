@@ -20,19 +20,19 @@
                 <div class="form-group">
                   <label for="spec"><b>Wybierz specjaliste:</b></label>
                   <select name="spec">
-                    <option value="jarek">Jaroslaw Ogorek</option>
-                    <option value="kalinka">Kalina Trautzel</option>
-                    <option value="szymkek">Szymon Oleksy</option>
+                    <option value="Jaroslaw Ogorek">Jaroslaw Ogorek</option>
+                    <option value="Kalina Trautzel">Kalina Trautzel</option>
+                    <option value="Szymon Oleksy">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
                     <label for="treat"><b>Wybierz usluge:</b></label>
                     <select name="treat">
-                      <option value="1">Borowanie zęba</option>
-                      <option value="2">ligula porta</option>
-                      <option value="3">euismod semper</option>
-                      <option value="4">Vestibulum</option>
-                      <option value="5">Wegestas eget quam</option>
-                      <option value="6">Konsultacja</option>
+                      <option value="Borowanie zęba">Borowanie zęba</option>
+                      <option value="ligula porta">ligula porta</option>
+                      <option value="Euismod semper">euismod semper</option>
+                      <option value="Vestibulum">Vestibulum</option>
+                      <option value="Wegestas eget quam">Wegestas eget quam</option>
+                      <option value="Konsultacja">Konsultacja</option>
                     </select>
                   </div>
                 </div>
