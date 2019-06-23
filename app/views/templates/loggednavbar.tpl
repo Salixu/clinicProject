@@ -40,7 +40,7 @@
           {else if $res == recep}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item paddingRight">
+              <li class="nav-item paddingRightLogout">
                 <a class="nav-link" href="{$conf->action_root}upcomingVisitsRecep"><b>Wyswietl wizyty</b></a>
               </li>
               <li class="nav-item">
@@ -51,10 +51,10 @@
           {else if $res == doctor}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
-              <li class="nav-item">
+              <li class="nav-item paddingRightLogout">
                 <a class="nav-link" href="{$conf->action_root}upcomingVisitsDoc"><b>Wizyty</b></a>
               </li>
-              <li class="nav-item paddingRight">
+              <li class="nav-item">
                 <a class="nav-link" href="{$conf->action_root}logout"><b>Wyloguj</b></a>
               </li>
             </ul>
@@ -62,6 +62,9 @@
           {else if $res == admin}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item paddingRight">
+                <a class="nav-link" href="{$conf->action_root}generateViewUsers"><b>Użytkownicy</b></a>
+              </li>
               <li class="nav-item paddingRight">
                 <a class="nav-link" href="{$conf->action_root}generateViewAddUser"><b>Dodaj konto</b></a>
               </li>
