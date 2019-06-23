@@ -23,6 +23,7 @@
   getRouter()->addRoute('showUserVisits', 'userVisits', ['user']);
   getRouter()->addRoute('upcomingVisits', 'userVisits', ['user']);
   getRouter()->addRoute('doneVisits', 'userVisits', ['user']);
+  getRouter()->addRoute('generateViewVisits', 'userVisits', ['user']);
   
   getRouter()->go();
 
