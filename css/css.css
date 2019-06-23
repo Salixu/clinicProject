@@ -68,3 +68,12 @@
   padding: 5px;
   width: 5000px;
 }
+
+.visitsAllign{
+  text-align: center;
+}
+
+.pagination{
+  font-size: 2px;
+  color: #258d91;
+}

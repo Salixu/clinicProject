@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-09 18:10:27
+/* Smarty version 3.1.33, created on 2019-06-22 14:54:02
   from 'D:\xamp\htdocs\clinicProject\app\views\bookvisit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cfd2f73673a75_54578501',
+  'unifunc' => 'content_5d0e24ea3c4139_93281019',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79130b633961c588c9b3353b0a253ddc4b94d22a' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\bookvisit.tpl',
-      1 => 1560096625,
+      1 => 1561208038,
       2 => 'file',
     ),
   ),
@@ -21,24 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:records.tpl' => 1,
   ),
 ),false)) {
-function content_5cfd2f73673a75_54578501 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0e24ea3c4139_93281019 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13917565485cfd2f73661fa4_53506474', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16406516065d0e24ea3b0fc1_63005403', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_13917565485cfd2f73661fa4_53506474 extends Smarty_Internal_Block
+class Block_16406516065d0e24ea3b0fc1_63005403 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_13917565485cfd2f73661fa4_53506474',
+    0 => 'Block_16406516065d0e24ea3b0fc1_63005403',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,19 +65,19 @@ bookVisit','records'); return false;">
                 <div class="form-group">
                   <label for="spec"><b>Wybierz specjaliste:</b></label>
                   <select name="spec">
-                    <option value="jarek">Jaroslaw Ogorek</option>
-                    <option value="kalinka">Kalina Trautzel</option>
-                    <option value="szymkek">Szymon Oleksy</option>
+                    <option value="Jaroslaw Ogorek">Jaroslaw Ogorek</option>
+                    <option value="Kalina Trautzel">Kalina Trautzel</option>
+                    <option value="Szymon Oleksy">Szymon Oleksy</option>
                   </select>
                   <div class="form-group">
                     <label for="treat"><b>Wybierz usluge:</b></label>
                     <select name="treat">
-                      <option value="a">Borowanie zęba</option>
-                      <option value="b">ligula porta</option>
-                      <option value="c">euismod semper</option>
-                      <option value="d">Vestibulum</option>
-                      <option value="e">Wegestas eget quam</option>
-                      <option value="f">Konsultacja</option>
+                      <option value="Borowanie zęba">Borowanie zęba</option>
+                      <option value="ligula porta">ligula porta</option>
+                      <option value="Euismod semper">euismod semper</option>
+                      <option value="Vestibulum">Vestibulum</option>
+                      <option value="Wegestas eget quam">Wegestas eget quam</option>
+                      <option value="Konsultacja">Konsultacja</option>
                     </select>
                   </div>
                 </div>

@@ -26,7 +26,7 @@
                 <a class="nav-link" href="{$conf->action_root}showVisit"><b>Ustal wizytę</b></a>
               </li>
               <li class="nav-item paddingRight">
-                <a class="nav-link" href="{$conf->action_root}showUserVisits"><b>Wyświetl wizyty</b></a>
+                <a class="nav-link" href="{$conf->action_root}generateViewVisits"><b>Wyświetl wizyty</b></a>
               </li>
               <li class="nav-item paddingRightLogout">
                 <a class="nav-link" href="{$conf->action_root}userprofileShow"><b>Edytuj profil</b></a>
@@ -40,8 +40,11 @@
           {else if $res == recep}
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item paddingRight">
+                <a class="nav-link" href="{$conf->action_root}upcomingVisitsRecep"><b>Wyswietl wizyty</b></a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="{$conf->action_root}logout"><b>recep</b></a>
+                <a class="nav-link" href="{$conf->action_root}logout"><b>Wyloguj</b></a>
               </li>
             </ul>
           </div>
@@ -49,7 +52,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
               <li class="nav-item">
-                <a class="nav-link" href="{$conf->action_root}logout"><b>doc</b></a>
+                <a class="nav-link" href="{$conf->action_root}upcomingVisitsDoc"><b>Wizyty</b></a>
+              </li>
+              <li class="nav-item paddingRight">
+                <a class="nav-link" href="{$conf->action_root}logout"><b>Wyloguj</b></a>
               </li>
             </ul>
           </div>
