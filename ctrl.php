@@ -29,6 +29,8 @@
   getRouter()->addRoute('declineVisit', 'recepCtrl', ['recep']);
   getRouter()->addRoute('upcomingVisitsDoc', 'doctorCtrl', ['doctor']);
   getRouter()->addRoute('acceptVisitFull', 'doctorCtrl', ['doctor']);
+  getRouter()->addRoute('generateViewUsers', 'adminUsersCtrl', ['admin']);
+  getRouter()->addRoute('searchUser', 'adminUsersCtrl', ['admin']);
 
   getRouter()->go();
 
