@@ -24,7 +24,9 @@
   getRouter()->addRoute('upcomingVisits', 'userVisits', ['user']);
   getRouter()->addRoute('doneVisits', 'userVisits', ['user']);
   getRouter()->addRoute('generateViewVisits', 'userVisits', ['user']);
-  
+  getRouter()->addRoute('upcomingVisitsRecep', 'recepCtrl', ['recep']);
+  getRouter()->addRoute('acceptVisit', 'recepCtrl', ['recep']);
+  getRouter()->addRoute('declineVisits', 'recepCtrl', ['recep']);
   getRouter()->go();
 
  ?>

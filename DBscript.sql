@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `email` VARCHAR(45) NULL,
   `phone_number` VARCHAR(45) NULL,
   `role` VARCHAR(15) NULL,
-  'status' VARCHAR(15) NULL,
+  'statusAccount' VARCHAR(15) NULL,
   'lastUpdate' DATE NULL
   PRIMARY KEY (`id_user`));
 
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
 
     CREATE TABLE IF NOT EXISTS `clinicdb`.`visit`(
       `id_visit` INT NOT NULL AUTO_INCREMENT,
-      `id_user`  VARCHAR(45) NULL,
+      `id_user`  INT(11) NULL,
       `id_doctor` VARCHAR(45) NULL,
       `treatment` VARCHAR(256) NULL,
       `dateVisit` DATE NULL,

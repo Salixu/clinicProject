@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-23 14:03:19
+/* Smarty version 3.1.33, created on 2019-06-23 17:32:21
   from 'D:\xamp\htdocs\clinicProject\app\views\templates\loggednavbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0f6a87d99495_49760755',
+  'unifunc' => 'content_5d0f9b856d0f49_05445146',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '24f9b7accd49bd457d431b0a8f7c743f113647f6' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\templates\\loggednavbar.tpl',
-      1 => 1561291385,
+      1 => 1561303926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0f6a87d99495_49760755 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0f9b856d0f49_05445146 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -85,9 +85,13 @@ logout"><b>Wyloguj</b></a>
           <?php } elseif ($_smarty_tpl->tpl_vars['res']->value == 'recep') {?>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navbarFontSize">
+              <li class="nav-item paddingRight">
+                <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+upcomingVisitsRecep"><b>Wyswietl wizyty</b></a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-logout"><b>recep</b></a>
+logout"><b>Wyloguj</b></a>
               </li>
             </ul>
           </div>
@@ -125,7 +129,7 @@ logout"><b>Wyloguj</b></a>
         </nav>
     <div class = "container">
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15551597345d0f6a87d98902_12810129', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20382328315d0f9b856cffa4_65461355', 'content');
 ?>
 
     </div>
@@ -133,12 +137,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15551597345d0f6a87
 </html>
 <?php }
 /* {block 'content'} */
-class Block_15551597345d0f6a87d98902_12810129 extends Smarty_Internal_Block
+class Block_20382328315d0f9b856cffa4_65461355 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_15551597345d0f6a87d98902_12810129',
+    0 => 'Block_20382328315d0f9b856cffa4_65461355',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
