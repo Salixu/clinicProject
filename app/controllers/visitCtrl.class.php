@@ -39,7 +39,7 @@ class visitCtrl{
        'dateVisit' => $_SESSION['date'],
        'id_doctor' => $_SESSION['spec'],
        'time' => '10-11',
-       'status' => '1'
+       'status' => ['1', '3']
      ]
    ]);
    if (is_array($this->isDoc)){
@@ -53,7 +53,7 @@ class visitCtrl{
         'dateVisit' => $_SESSION['date'],
         'id_doctor' => $_SESSION['spec'],
         'time' => '11-12',
-        'status' => '1'
+        'status' => ['1', '3']
       ]
     ]);
     if (is_array($this->isDoc)){
@@ -67,7 +67,7 @@ class visitCtrl{
          'dateVisit' => $_SESSION['date'],
          'id_doctor' => $_SESSION['spec'],
          'time' => '12-13',
-         'status' => '1'
+         'status' => ['1', '3']
        ]
      ]);
      if (is_array($this->isDoc)){
@@ -81,7 +81,7 @@ class visitCtrl{
           'dateVisit' => $_SESSION['date'],
           'id_doctor' => $_SESSION['spec'],
           'time' => '13-14',
-          'status' => '1'
+          'status' => ['1', '3']
         ]
       ]);
       if (is_array($this->isDoc)){
@@ -95,7 +95,7 @@ class visitCtrl{
            'dateVisit' => $_SESSION['date'],
            'id_doctor' => $_SESSION['spec'],
            'time' => '14-15',
-           'status' => '1'
+           'status' => ['1', '3']
          ]
        ]);
        if (is_array($this->isDoc)){
@@ -109,7 +109,7 @@ class visitCtrl{
             'dateVisit' => $_SESSION['date'],
             'id_doctor' => $_SESSION['spec'],
             'time' => '15-16',
-            'status' => '1'
+            'status' => ['1', '3']
           ]
         ]);
         if (is_array($this->isDoc)){
@@ -123,7 +123,7 @@ class visitCtrl{
              'dateVisit' => $_SESSION['date'],
              'id_doctor' => $_SESSION['spec'],
              'time' => '16-17',
-             'status' => '1'
+             'status' => ['1', '3']
            ]
          ]);
          if (is_array($this->isDoc)){
@@ -137,7 +137,7 @@ class visitCtrl{
               'dateVisit' => $_SESSION['date'],
               'id_doctor' => $_SESSION['spec'],
               'time' => '17-18',
-              'status' => '1'
+              'status' => ['1', '3']
             ]
           ]);
           if (is_array($this->isDoc)){

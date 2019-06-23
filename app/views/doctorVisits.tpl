@@ -22,7 +22,7 @@
       <td>{$r["treatment"]}</td>
       <td>{$r['time']}</td>
       <td>{$r['name']}</td>
-      <td><form action="{$conf->action_root}acceptVisitFull&id={$r['id_visit']}"  method="POST"><button type="submit" class="btn btn-success btn-sm">Potwierdz wizyte</button></form></td>
+      <td><form action="{$conf->action_root}acceptVisitFull&id={$r['id_visit']}"  method="POST"><button type="submit" class="btn btn-success btn-sm">Zakończona</button></form></td>
     </tr>
     {/strip}
     {/foreach}

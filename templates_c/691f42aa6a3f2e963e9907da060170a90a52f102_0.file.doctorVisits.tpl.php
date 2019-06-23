@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-23 21:04:52
+/* Smarty version 3.1.33, created on 2019-06-23 21:11:33
   from 'D:\xamp\htdocs\clinicProject\app\views\doctorVisits.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0fcd54d16e07_96509807',
+  'unifunc' => 'content_5d0fcee5935049_23788024',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '691f42aa6a3f2e963e9907da060170a90a52f102' => 
     array (
       0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\doctorVisits.tpl',
-      1 => 1561316682,
+      1 => 1561317089,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0fcd54d16e07_96509807 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0fcee5935049_23788024 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_965804875d0fcd54d051e6_35741875', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2675443025d0fcee5921de3_77902324', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_965804875d0fcd54d051e6_35741875 extends Smarty_Internal_Block
+class Block_2675443025d0fcee5921de3_77902324 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_965804875d0fcd54d051e6_35741875',
+    0 => 'Block_2675443025d0fcee5921de3_77902324',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -69,7 +69,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 </td><td><?php echo $_smarty_tpl->tpl_vars['r']->value['name'];?>
 </td><td><form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 acceptVisitFull&id=<?php echo $_smarty_tpl->tpl_vars['r']->value['id_visit'];?>
-"  method="POST"><button type="submit" class="btn btn-success btn-sm">Potwierdz wizyte</button></form></td></tr>
+"  method="POST"><button type="submit" class="btn btn-success btn-sm">Zakończona</button></form></td></tr>
     <?php
 }
 }
