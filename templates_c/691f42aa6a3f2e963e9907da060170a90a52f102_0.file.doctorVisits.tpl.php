@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-06-23 20:17:47
-  from 'D:\xamp\htdocs\clinicProject\app\views\recepVisits.tpl' */
+/* Smarty version 3.1.33, created on 2019-06-23 21:04:52
+  from 'D:\xamp\htdocs\clinicProject\app\views\doctorVisits.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d0fc24b960ea5_92224674',
+  'unifunc' => 'content_5d0fcd54d16e07_96509807',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '94a950166d3bd1bcad28566b2ef35da08cedd0c2' => 
+    '691f42aa6a3f2e963e9907da060170a90a52f102' => 
     array (
-      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\recepVisits.tpl',
-      1 => 1561313845,
+      0 => 'D:\\xamp\\htdocs\\clinicProject\\app\\views\\doctorVisits.tpl',
+      1 => 1561316682,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0fc24b960ea5_92224674 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d0fcd54d16e07_96509807 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20824373315d0fc24b94d816_65063228', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_965804875d0fcd54d051e6_35741875', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "loggednavbar.tpl");
 }
 /* {block 'content'} */
-class Block_20824373315d0fc24b94d816_65063228 extends Smarty_Internal_Block
+class Block_965804875d0fcd54d051e6_35741875 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_20824373315d0fc24b94d816_65063228',
+    0 => 'Block_965804875d0fcd54d051e6_35741875',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -55,7 +55,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <th scope="col">Zabieg</th>
       <th scope="col">Godzina</th>
       <th scope="col">Pacjent</th>
-      <th scope="col">Specjalista</th>
     </tr>
     </thead>
     <tbody>
@@ -68,12 +67,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['r']->value) {
 </th><td><?php echo $_smarty_tpl->tpl_vars['r']->value["treatment"];?>
 </td><td><?php echo $_smarty_tpl->tpl_vars['r']->value['time'];?>
 </td><td><?php echo $_smarty_tpl->tpl_vars['r']->value['name'];?>
-</td><td><?php echo $_smarty_tpl->tpl_vars['r']->value['id_doctor'];?>
 </td><td><form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-acceptVisit&id=<?php echo $_smarty_tpl->tpl_vars['r']->value['id_visit'];?>
-"  method="POST"><button type="submit" class="btn btn-success btn-sm">Potwierdz wizyte</button></form></td><td><form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-declineVisit&id=<?php echo $_smarty_tpl->tpl_vars['r']->value['id_visit'];?>
-" method="POST"><button type="submit" class="btn btn-danger btn-sm">Anuluj wizyte</button></form></td></tr>
+acceptVisitFull&id=<?php echo $_smarty_tpl->tpl_vars['r']->value['id_visit'];?>
+"  method="POST"><button type="submit" class="btn btn-success btn-sm">Potwierdz wizyte</button></form></td></tr>
     <?php
 }
 }
@@ -87,7 +83,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                       <div class="pagination">
                       <div class="col">
                         <a class="<?php if ($_smarty_tpl->tpl_vars['paginator']->value['prev'] == 'disbaled') {?>disabled<?php }?>" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/ctrl.php?action=upcomingVisitsRecep&page=<?php echo $_smarty_tpl->tpl_vars['paginator']->value['prev'];?>
+/ctrl.php?action=upcomingVisitsDoc&page=<?php echo $_smarty_tpl->tpl_vars['paginator']->value['prev'];?>
 "><span style="font-size:0.9rem;"><i class="fa fa-arrow-left"></i></span></a>
                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['paginator']->value['steps'], 'i');
@@ -98,7 +94,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['i']->value) {
 echo $_smarty_tpl->tpl_vars['i']->value;
 $_prefixVariable1 = ob_get_clean();
 if ($_smarty_tpl->tpl_vars['paginator']->value['active'] == $_prefixVariable1) {?>active<?php }?>" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/ctrl.php?action=upcomingVisitsRecep&page=<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+/ctrl.php?action=upcomingVisitsDoc&page=<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 "><span style="font-size:1.4rem;"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </span></a>
                         <?php
@@ -106,7 +102,7 @@ if ($_smarty_tpl->tpl_vars['paginator']->value['active'] == $_prefixVariable1) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <a class="<?php if ($_smarty_tpl->tpl_vars['paginator']->value['next'] == 'disabled') {?>disabled<?php }?>"  href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/ctrl.php?action=upcomingVisitsRecep&page=<?php echo $_smarty_tpl->tpl_vars['paginator']->value['next'];?>
+/ctrl.php?action=upcomingVisitsDoc&page=<?php echo $_smarty_tpl->tpl_vars['paginator']->value['next'];?>
 "><span style="font-size:0.9rem;"><i class="fa fa-arrow-right"></i></span></a>
                       </div>
                     </div>

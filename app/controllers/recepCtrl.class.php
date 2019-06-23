@@ -64,7 +64,7 @@ class recepCtrl{
     getSmarty()->display("recepVisits.tpl");
   }
 
-  public function action_declinetVisit(){
+  public function action_declineVisit(){
     $id = getFromRequest('id');
     getDB()->update("visit", [
       "status" => "2",

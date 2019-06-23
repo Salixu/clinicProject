@@ -17,7 +17,7 @@ class userVisits{
     $this->page = getFromRequest('page');
     $this->totalItems = getDB()->count("visit", "*",[
       "id_user" => $_SESSION['id_user'],
-      "status" => "0"
+      "status" => "1"
     ]);
     $this->offset = null;
     $this->paginator = $this->pag->paginator(5, $this->totalItems, $this->page, $this->offset);
@@ -30,7 +30,7 @@ class userVisits{
     ], [
       "AND" =>[
       "id_user" => $_SESSION['id_user'],
-      "status" => "0"
+      "status" => "1"
     ],
        'ORDER'     => $this->sort,
         'LIMIT'     => [ $this->offset, $this->paginator['itemsOnPage'] ]
@@ -41,7 +41,7 @@ class userVisits{
     $this->page = getFromRequest('page');
     $this->totalItems = getDB()->count("visit", "*",[
       "id_user" => $_SESSION['id_user'],
-      "status" => "1"
+      "status" => "3"
     ]);
     $this->offset = null;
     $this->paginator = $this->pag->paginator(5, $this->totalItems, $this->page, $this->offset);
@@ -54,7 +54,7 @@ class userVisits{
     ], [
       "AND" =>[
       "id_user" => $_SESSION['id_user'],
-      "status" => "1"
+      "status" => "3"
     ],
        'ORDER'     => $this->sort,
         'LIMIT'     => [ $this->offset, $this->paginator['itemsOnPage'] ]

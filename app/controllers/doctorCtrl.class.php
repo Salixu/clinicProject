@@ -2,7 +2,7 @@
 namespace app\controllers;
 use core\Paginator;
 
-class userVisits{
+class doctorCtrl{
   private $paginator;
   private $pag;
   private $offset;
@@ -14,54 +14,66 @@ class userVisits{
   }
 
   public function load_data(){
+    $doc = getDB()->get("users", "email",[
+      "id_user" => $_SESSION['id_user']
+    ]);
     $this->page = getFromRequest('page');
     $this->totalItems = getDB()->count("visit", "*",[
-      "id_user" => $_SESSION['id_user'],
-      "status" => "2"
+      "status" => "1"
+    ], [
+      "AND" =>[
+        "id_doctor" => $doc
+      ]
     ]);
     $this->offset = null;
     $this->paginator = $this->pag->paginator(5, $this->totalItems, $this->page, $this->offset);
     $this->clients = getDB()->select("visit",[
-        "id_doctor",
-        "dateVisit",
-        "treatment",
-        "time",
-        "id_user",
+      "[>]users" => ["visit.id_user" => "id_user"]
+    ],
+    [
+        "visit.id_visit",
+        "visit.id_doctor",
+        "visit.dateVisit",
+        "visit.treatment",
+        "visit.time",
+        "users.name",
+        "visit.id_user"
     ], [
       "AND" =>[
-      "id_user" => $_SESSION['id_user'],
-      "status" => "2"
+      "status" => "1",
+      "id_doctor" => $doc
     ],
        'ORDER'     => $this->sort,
         'LIMIT'     => [ $this->offset, $this->paginator['itemsOnPage'] ]
-    ]);
+    ]
+  );
   }
 
-  public function load_data2(){
-    $this->page = getFromRequest('page');
-    $this->totalItems = getDB()->count("visit", "*",[
-      "id_user" => $_SESSION['id_user'],
-      "status" => "3"
+  public function action_acceptVisitFull(){
+    $id = getFromRequest('id');
+    getDB()->update("visit", [
+      "status" => "3",
+    ],[
+      "id_visit" => $id
     ]);
-    $this->offset = null;
-    $this->paginator = $this->pag->paginator(5, $this->totalItems, $this->page, $this->offset);
-    $this->clients = getDB()->select("visit",[
-        "id_doctor",
-        "dateVisit",
-        "treatment",
-        "time",
-        "id_user",
-    ], [
-      "AND" =>[
-      "id_user" => $_SESSION['id_user'],
-      "status" => "3"
-    ],
-       'ORDER'     => $this->sort,
-        'LIMIT'     => [ $this->offset, $this->paginator['itemsOnPage'] ]
-    ]);
+    $this->load_data();
+    getSmarty()->assign("check", "upcoming");
+    getSmarty()->assign("paginator", $this->paginator);
+    getSmarty()->assign("record", $this->clients);
+    getSmarty()->assign("total", $this->totalItems);
+    getSmarty()->assign('page', $this->page);
+    getSmarty()->assign('id', $_SESSION['id_user']);
+    getSmarty()->assign("pagetitle", "Lista Klientów");
+    getSmarty()->assign('res', $_SESSION['role']);
+    getSmarty()->assign('active', 'showUserVisits');
+    getSmarty()->assign('page_title', 'RemediumDente');
+    getSmarty()->assign('page_description', 'RemediumDente');
+    getSmarty()->assign('res', $_SESSION['role']);
+    getSmarty()->display("doctorVisits.tpl");
   }
 
-  public function action_upcomingVisits(){
+
+  public function action_upcomingVisitsDoc(){
                 $this->load_data();
                 getSmarty()->assign("check", "upcoming");
                 getSmarty()->assign("paginator", $this->paginator);
@@ -72,33 +84,10 @@ class userVisits{
                 getSmarty()->assign("pagetitle", "Lista Klientów");
                 getSmarty()->assign('res', $_SESSION['role']);
                 getSmarty()->assign('active', 'showUserVisits');
-                getSmarty()->display("userVisits.tpl");
-  }
-
-
-
-  public function action_doneVisits(){
-                $this->load_data2();
-                getSmarty()->assign("check", "done");
-                getSmarty()->assign("paginator", $this->paginator);
-                getSmarty()->assign("record", $this->clients);
-                getSmarty()->assign("total", $this->totalItems);
-                getSmarty()->assign('page', $this->page);
-                getSmarty()->assign('id', $_SESSION['id_user']);
-                getSmarty()->assign("pagetitle", "Lista Klientów");
+                getSmarty()->assign('page_title', 'RemediumDente');
+                getSmarty()->assign('page_description', 'RemediumDente');
                 getSmarty()->assign('res', $_SESSION['role']);
-                getSmarty()->assign('active', 'showUserVisits');
-                getSmarty()->display("userVisits.tpl");
-  }
-
-  public function action_generateViewVisits(){
-    $this->generateViewVisits();
-  }
-  public function generateViewVisits(){
-    getSmarty()->assign('page_title', 'RemediumDente');
-    getSmarty()->assign('page_description', 'RemediumDente');
-    getSmarty()->assign('res', $_SESSION['role']);
-    getSmarty()->display('userVisitGlobal.tpl');
+                getSmarty()->display("doctorVisits.tpl");
   }
 }
  ?>

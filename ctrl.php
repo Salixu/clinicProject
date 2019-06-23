@@ -26,7 +26,10 @@
   getRouter()->addRoute('generateViewVisits', 'userVisits', ['user']);
   getRouter()->addRoute('upcomingVisitsRecep', 'recepCtrl', ['recep']);
   getRouter()->addRoute('acceptVisit', 'recepCtrl', ['recep']);
-  getRouter()->addRoute('declineVisits', 'recepCtrl', ['recep']);
+  getRouter()->addRoute('declineVisit', 'recepCtrl', ['recep']);
+  getRouter()->addRoute('upcomingVisitsDoc', 'doctorCtrl', ['doctor']);
+  getRouter()->addRoute('acceptVisitFull', 'doctorCtrl', ['doctor']);
+
   getRouter()->go();
 
  ?>
