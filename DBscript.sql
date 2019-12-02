@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS `clinicdb`.`users` (
   `email` VARCHAR(45) NULL,
   `phone_number` VARCHAR(45) NULL,
   `role` VARCHAR(15) NULL,
-  'statusAccount' VARCHAR(15) NULL,
-  'lastUpdate' DATE NULL
+  `statusAccount` VARCHAR(15) NULL,
+  `lastUpdate` DATE NULL,
   PRIMARY KEY (`id_user`));
 
   CREATE TABLE IF NOT EXISTS `clinicdb`.`contact` (
